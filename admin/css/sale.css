@@ -1,0 +1,25 @@
+.my_shopping--content__item .my_shopping--content__body .sale_order thead {
+  background: #e2e2e2; }
+  .my_shopping--content__item .my_shopping--content__body .sale_order thead th {
+    position: relative;
+    cursor: pointer; }
+    .my_shopping--content__item .my_shopping--content__body .sale_order thead th:after {
+      position: absolute;
+      content: "\2191";
+      right: 0; }
+    .my_shopping--content__item .my_shopping--content__body .sale_order thead th:before {
+      position: absolute;
+      content: "\2193";
+      right: 20px; }
+.my_shopping--content__item .my_shopping--content__body .sale_order tbody {
+  vertical-align: middle; }
+  .my_shopping--content__item .my_shopping--content__body .sale_order tbody tr {
+    height: 70px; }
+    .my_shopping--content__item .my_shopping--content__body .sale_order tbody tr td .sale_order_img {
+      height: 100%;
+      display: flex;
+      justify-content: space-around; }
+      .my_shopping--content__item .my_shopping--content__body .sale_order tbody tr td .sale_order_img img {
+        height: 40px; }
+
+/*# sourceMappingURL=sale.css.map */

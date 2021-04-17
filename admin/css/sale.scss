@@ -1,0 +1,40 @@
+.my_shopping--content__item {
+	.my_shopping--content__body {
+		.sale_order {
+			thead{
+				background: #e2e2e2;
+				th{
+					position: relative;
+					cursor: pointer;
+					&:after{
+						position: absolute;
+						content: "\2191";
+						right: 0;
+					}
+					&:before{
+						position: absolute;
+						content: "\2193";
+						right: 20px;
+					}
+				}
+			}
+			tbody{
+				vertical-align: middle;
+				tr{
+					height: 70px;
+					td{
+						.sale_order_img{
+							height: 100%;
+							display: flex;
+							justify-content: space-around;
+							img{
+								height: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
