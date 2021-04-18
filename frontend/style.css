@@ -335,8 +335,8 @@ html, body {
   bottom: -3px;
   left: 0;
   height: 2px;
-  background: red;
-  transition: 0.4s; }
+  background: #f24a3a;
+  transition: 0.3s; }
 
 .nav-item--choose-link:hover:after {
   width: 50px; }
