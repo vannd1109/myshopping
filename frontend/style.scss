@@ -424,8 +424,8 @@ display: flex;
   bottom: -3px;
   left: 0;
   height: 2px;
-  background: #f24a3a;
-  transition: 0.3s;
+  background: $orange_s;
+  transition: 0.2s;
 }
 
 .nav-item--choose-link:hover:after {
