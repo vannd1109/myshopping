@@ -162,7 +162,7 @@ html, body {
             color: #ff4c3b !important; }
     .menu .menu_content .menu_option {
       display: flex; }
-      .menu .menu_content .menu_option .menu_option--search-icon {
+      .menu .menu_content .menu_option .menu_option--icon {
         font-size: 20px;
         color: #999999;
         cursor: pointer;
@@ -709,7 +709,7 @@ html, body {
 
 .fashion_trends {
   margin-top: 70px;
-  background-image: url(./images/fashion_trend_bg.jpg);
+  background-image: url(../images/fashion_trend_bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 500px;

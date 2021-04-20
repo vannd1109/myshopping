@@ -244,7 +244,7 @@ $(document).ready(function() {
 		$('.bg_sidebar').removeClass('show_menu_sidebar');
 	});
 
-	$('.menu_option--search-icon, .menu_sidebar--bottom-search').click(function(){
+	$('.menu_option--icon-search, .menu_sidebar--bottom-search').click(function(){
 		$('.search').addClass('show_search');
 	});
 
