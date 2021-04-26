@@ -801,6 +801,7 @@ display: flex;
 
   .new_product--item-price {
   	text-align: left;
+    padding-top: 10px;
   }
 
   .new_product--price-star i {
@@ -808,11 +809,15 @@ display: flex;
   	font-size: 13px;
   }
 
-  .new_product--price-name {
+  .new_product--name {
   	font-size: 16px;
   	text-transform: capitalize;
   	color: $gray_s;
   	margin-bottom: 0;
+  }
+
+  .new_product--des{
+    display: none;
   }
 
   .new_product--price-sale {

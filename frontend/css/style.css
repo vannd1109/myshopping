@@ -645,17 +645,21 @@ html, body {
   color: #ff4c3b; }
 
 .new_product--item-price {
-  text-align: left; }
+  text-align: left;
+  padding-top: 10px; }
 
 .new_product--price-star i {
   color: #ffa200;
   font-size: 13px; }
 
-.new_product--price-name {
+.new_product--name {
   font-size: 16px;
   text-transform: capitalize;
   color: #999999;
   margin-bottom: 0; }
+
+.new_product--des {
+  display: none; }
 
 .new_product--price-sale {
   font-size: 18px;

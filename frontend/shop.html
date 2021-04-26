@@ -2008,10 +2008,10 @@
 							<!-- menu_main -->
 							<div class="menu_option">
 								<div class="menu_option--search">
-									<i class="fa fa-search menu_option--search-icon"></i>
+									<i class="fa fa-search menu_option--icon menu_option--icon-search"></i>
 								</div>
 								<div class="menu_option--setting">
-									<i class="fa fa-cog menu_option--search-icon"></i>
+									<i class="fa fa-cog menu_option--icon"></i>
 									<ul class="nav_item--list">
 										<h3 class="nav_item--list-label">language</h3>
 										<li class="nav_item--item">
@@ -2036,7 +2036,7 @@
 									</ul>
 								</div>
 								<div class="menu_option--shopping">
-									<i class="fa fa-store menu_option--search-icon"></i>
+									<i class="fa fa-store menu_option--icon"></i>
 									<ul class="nav_item--list">
 										<div class="nav_item--list-product">
 											<li class="nav_item--item">
@@ -2364,14 +2364,14 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="breadcrumb_page--name">
-							<h3 class="breadcrumb_page--nam-label">colection</h3>
+							<h3 class="breadcrumb_page--nam-label">collection</h3>
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<nav aria-label="breadcrumb" class="breadcrumb_page--theme">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">colection</li>
+								<li class="breadcrumb-item active" aria-current="page">collection</li>
 							</ol>
 						</nav>
 					</div>
@@ -2465,10 +2465,6 @@
 										<li class="shopping_sidebar--item">
 											<input type="checkbox" name="size-xl" value="">
 											<label for="size-xl">xl</label>
-										</li>
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="size-xxl" value="">
-											<label for="size-xxl">xxl</label>
 										</li>
 									</ul>
 								</div>
@@ -2645,6 +2641,12 @@
 									</div>
 								</div>
 							</div>
+							<!-- shopping_sidebar--new-product -->
+							<div class="shopping_sidebar--side-banner">
+								<a href="">
+									<img class="shopping_sidebar--side-banner-img" src="./images/side-banner.png" alt="">
+								</a>
+							</div>
 						</div>
 						<!-- shopping_sidebar -->
 					</div>
@@ -2673,20 +2675,20 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-6">
 									<div class="shopping_product--action-column">
 										<div class="shopping_product--action-column-left">
-											<i class="fa fa-bars"></i>
-											<i class="fa fa-list"></i>
+											<i id="action-column-grid" class="fa fa-bars"></i>
+											<i id="action-column-list" class="fa fa-list"></i>
 										</div>
-										<div class="shopping_product--action-column-right">
-											<img src="./images/column-2.png" alt="">
-											<img src="./images/column-3.png" alt="">
-											<img src="./images/column-4.png" alt="">
+										<div id="action-column" class="shopping_product--action-column-right">
+											<img id="action-column--two" src="./images/column-2.png" alt="">
+											<img id="action-column--three" src="./images/column-3.png" alt="">
+											<img id="action-column--four" src="./images/column-4.png" alt="">
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-3">
+								<div class="col-3">
 									<div class="shopping_product--action-sort">
 										<select name="" id="">
 											<option value="">24 products par page</option>
@@ -2710,7 +2712,7 @@
 						</div>
 						<div class="shopping_product--list">
 							<div class="row product_tabs--item">
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
@@ -2731,28 +2733,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_2.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_2.2.jpg" alt="" class="new_product--image-two">
@@ -2773,28 +2780,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_3.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_3.3.jpg" alt="" class="new_product--image-two">
@@ -2815,28 +2827,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_4.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_4.4.jpg" alt="" class="new_product--image-two">
@@ -2857,28 +2874,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_4.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_4.4.jpg" alt="" class="new_product--image-two">
@@ -2899,28 +2921,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_3.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_3.3.jpg" alt="" class="new_product--image-two">
@@ -2941,28 +2968,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_2.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_2.2.jpg" alt="" class="new_product--image-two">
@@ -2983,28 +3015,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
@@ -3025,28 +3062,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
@@ -3067,28 +3109,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
@@ -3109,28 +3156,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
@@ -3151,28 +3203,33 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
-								<div class="col-sm-3 new_product--item">
+								<div class="col-3 new_product--item">
 									<div class="new_product--item-image">
 										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
 										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
@@ -3193,27 +3250,65 @@
 											</a>
 										</div>
 									</div>
-									<div class="new_product--item-price">
-										<div class="new_product--price-star">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+									<div class="new_product--item-info">
+										<div class="new_product--item-price">
+											<div class="new_product--price-star">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<p class="new_product--name">Slim fit contton shirt</p>
+											<p class="new_product--des">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+											</p>
+											<div class="new_product--prices">
+												<span class="new_product--price-sale">$500.00</span>
+											</div>
 										</div>
-										<p class="new_product--price-name">Slim fit contton shirt</p>
-										<div class="new_product--prices">
-											<span class="new_product--price-sale">$500</span>
-											<span class="new_product--price-first">$600</span>
+										<div class="new_product--item-color">
+											<span class="new_product--color-first"></span>
+											<span class="new_product--color-second"></span>
+											<span class="new_product--color-three"></span>
 										</div>
 									</div>
-									<div class="new_product--item-color">
-										<span class="new_product--color-first"></span>
-										<span class="new_product--color-second"></span>
-										<span class="new_product--color-three"></span>
-									</div>
+									
 								</div>
 								<!-- new_product--item -->
+							</div>
+							<!-- row product_tabs--item -->
+							<div class="row product_tabs--pagination">
+								<div class="col-sm-12 col-md-6">
+									<nav aria-label="">
+										<ul class="pagination">
+											<li class="page-item">
+												<a class="page-link" href="#">
+													<i class="fa fa-chevron-left"></i>
+												</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">1</a>
+											</li>
+											<li class="page-item active">
+												<a class="page-link" href="#">2</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">3</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">
+													<i class="fa fa-chevron-right"></i>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<p class="product_tabs--pagination-label">
+										showing products 1-24 of 10 result
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
