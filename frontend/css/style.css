@@ -326,7 +326,8 @@ html, body {
   position: relative; }
 
 .nav-item--choose-link:hover {
-  color: black; }
+  color: black;
+  text-decoration: none; }
 
 .nav-item--choose-link:after {
   content: "";
@@ -377,7 +378,8 @@ html, body {
   transform: translateY(-50%); }
 
 .nav_item--label:hover {
-  color: #222222; }
+  color: #222222;
+  text-decoration: none; }
 
 .nav_item--label:after {
   content: "";
@@ -656,7 +658,11 @@ html, body {
   font-size: 16px;
   text-transform: capitalize;
   color: #999999;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-decoration: none; }
+  .new_product--name:hover {
+    color: #999999;
+    text-decoration: none; }
 
 .new_product--des {
   display: none; }
@@ -1146,7 +1152,8 @@ html, body {
   position: relative; }
 
 .nav_item--item-link:hover {
-  color: black; }
+  color: black;
+  text-decoration: none; }
 
 .nav_item--item-link:after {
   content: "";

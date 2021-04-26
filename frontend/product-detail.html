@@ -10,6 +10,10 @@
 	<link rel="stylesheet" href="../libs/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/shop.css">
+	<link rel="stylesheet" href="../admin/css/product-list.css">
+	<link rel="stylesheet" href="../admin/css/product-detail.css">
+	<link rel="stylesheet" href="./css/product-detail.css">
+	<link rel="stylesheet" href="../libs/swiper-bundle.min.css">
 	<link rel="stylesheet" href="../libs/ranger_slider.css">
 </head>
 <body>
@@ -2364,14 +2368,14 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="breadcrumb_page--name">
-							<h3 class="breadcrumb_page--nam-label">collection</h3>
+							<h3 class="breadcrumb_page--nam-label">product</h3>
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<nav aria-label="breadcrumb" class="breadcrumb_page--theme">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">collection</li>
+								<li class="breadcrumb-item active" aria-current="page">product</li>
 							</ol>
 						</nav>
 					</div>
@@ -2380,940 +2384,347 @@
 		</div>
 		<!-- breadcrumb_shopping -->
 		<div class="shopping_body">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="shopping_sidebar">
-							<div class="shopping_sidebar--top">
-								<div class="shopping_sidebar--brand">
-									<h3 class="shopping_sidebar--label">
-										brand
-										<i class="fa fa-sort-down"></i>
-									</h3>
-									<ul class="shopping_sidebar--list">
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" id="zara" name="zara" value="">
-											<label class="shopping_sidebar--item-label" for="zara">zara</label>
-										</li>
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="vera-moda" value="">
-											<label class="shopping_sidebar--item-label" for="vera-moda">vera-moda</label>
-										</li>
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="forever-21" value="">
-											<label class="shopping_sidebar--item-label" for="forever-21">forever-21</label>
-										</li>
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="roadster" value="">
-											<label class="shopping_sidebar--item-label" for="roadster">roadster</label>
-										</li>
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="only" value="">
-											<label class="shopping_sidebar--item-label" for="obly">only</label>
-										</li>
-									</ul>
-								</div>
-								<!-- shopping_sidebar--brand -->
-								<div class="shopping_sidebar--color">
-									<h3 class="shopping_sidebar--label">
-										colors
-										<i class="fa fa-sort-down"></i>
-									</h3>
-									<ul class="shopping_sidebar--list">
-										<li class="shopping_sidebar--item active">
-
-										</li>
-										<li class="shopping_sidebar--item">
-
-										</li>
-										<li class="shopping_sidebar--item">
-
-										</li>
-										<li class="shopping_sidebar--item">
-
-										</li>
-										<li class="shopping_sidebar--item">
-
-										</li>
-										<li class="shopping_sidebar--item">
-
-										</li>
-										<li class="shopping_sidebar--item">
-
-										</li>
-									</ul>
-								</div>
-								<!-- shopping_sidebar--color -->
-								<div class="shopping_sidebar--size">
-									<h3 class="shopping_sidebar--label">
-										size
-										<i class="fa fa-sort-down"></i>
-									</h3>
-									<ul class="shopping_sidebar--list">
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="size-s" value="">
-											<label for="size-s">s</label>
-										</li>
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="size-m" value="">
-											<label for="size-m">m</label>
-										</li>
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="size-l" value="">
-											<label for="size-l">l</label>
-										</li>
-										<li class="shopping_sidebar--item">
-											<input type="checkbox" name="size-xl" value="">
-											<label for="size-xl">xl</label>
-										</li>
-									</ul>
-								</div>
-								<!-- shopping_sidebar--size -->
-								<div class="shopping_sidebar--price">
-									<h3 class="shopping_sidebar--label">
-										price
-										<i class="fa fa-sort-down"></i>
-									</h3>
-									<div class="shopping_sidebar--price-content">
-										<div class="shopping_sidebar--range-slider-price">
-											<span id="shopping_sidebar--price-min">0</span>
-											<span id="shopping_sidebar--price-max">100</span>
-										</div>
-										<div class="shopping_sidebar--range-slider">
-											<input id="range" onchange="myFunction()" type="text"/>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="shopping_sidebar--new-product">
-								<div class="shopping_sidebar--new-product-label">
-									<h3 class="shopping_sidebar--new-product-title">new product</h3>
-								</div>
-								<div class="shopping_sidebar--new-product-list">
-									<div class="swiper-container">
+			<div class="container product-detail">
+				<div class="my_shopping--product__list">
+					<div class="row">
+						<div class="col my_shopping--product__item">
+							<div class="row my_shopping--product__body">
+								<div class="col-6 my_shopping--product__image">
+									<div class="swiper-container gallery-top">
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
-												<div class="shopping_sidebar--new-product-item">
-													<div class="shopping_sidebar--new-product-img">
-														<a href="">
-															<img src="./images/new-product-1.jpg" alt="">
-														</a>
-													</div>
-													<div class="shopping_sidebar--new-product-info">
-														<div class="shopping_sidebar--new-product-star">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</div>
-														<a href="" class="shopping_sidebar--new-product-name">
-															slim fit cotton shirt
-														</a>
-														<p class="shopping_sidebar--new-product-price">
-															$500.000
-														</p>
-													</div>
-												</div>
-												<!-- shopping_sidebar--new-product-item -->
-												<div class="shopping_sidebar--new-product-item">
-													<div class="shopping_sidebar--new-product-img">
-														<a href="">
-															<img src="./images/new-product-2.jpg" alt="">
-														</a>
-													</div>
-													<div class="shopping_sidebar--new-product-info">
-														<div class="shopping_sidebar--new-product-star">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</div>
-														<a href="" class="shopping_sidebar--new-product-name">
-															slim fit cotton shirt
-														</a>
-														<p class="shopping_sidebar--new-product-price">
-															$500.000
-														</p>
-													</div>
-												</div>
-												<!-- shopping_sidebar--new-product-item -->
-												<div class="shopping_sidebar--new-product-item">
-													<div class="shopping_sidebar--new-product-img">
-														<a href="">
-															<img src="./images/new-product-3.jpg" alt="">
-														</a>
-													</div>
-													<div class="shopping_sidebar--new-product-info">
-														<div class="shopping_sidebar--new-product-star">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</div>
-														<a href="" class="shopping_sidebar--new-product-name">
-															slim fit cotton shirt
-														</a>
-														<p class="shopping_sidebar--new-product-price">
-															$500.000
-														</p>
-													</div>
-												</div>
-												<!-- shopping_sidebar--new-product-item -->
+												<img src="./images/product-detail/2.jpg" alt="">
 											</div>
 											<div class="swiper-slide">
-												<div class="shopping_sidebar--new-product-item">
-													<div class="shopping_sidebar--new-product-img">
-														<a href="">
-															<img src="./images/new-product-4.jpg" alt="">
-														</a>
-													</div>
-													<div class="shopping_sidebar--new-product-info">
-														<div class="shopping_sidebar--new-product-star">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</div>
-														<a href="" class="shopping_sidebar--new-product-name">
-															slim fit cotton shirt
-														</a>
-														<p class="shopping_sidebar--new-product-price">
-															$500.000
-														</p>
-													</div>
-												</div>
-												<!-- shopping_sidebar--new-product-item -->
-												<div class="shopping_sidebar--new-product-item">
-													<div class="shopping_sidebar--new-product-img">
-														<a href="">
-															<img src="./images/new-product-5.jpg" alt="">
-														</a>
-													</div>
-													<div class="shopping_sidebar--new-product-info">
-														<div class="shopping_sidebar--new-product-star">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</div>
-														<a href="" class="shopping_sidebar--new-product-name">
-															slim fit cotton shirt
-														</a>
-														<p class="shopping_sidebar--new-product-price">
-															$500.000
-														</p>
-													</div>
-												</div>
-												<!-- shopping_sidebar--new-product-item -->
-												<div class="shopping_sidebar--new-product-item">
-													<div class="shopping_sidebar--new-product-img">
-														<a href="">
-															<img src="./images/new-product-6.jpg" alt="">
-														</a>
-													</div>
-													<div class="shopping_sidebar--new-product-info">
-														<div class="shopping_sidebar--new-product-star">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</div>
-														<a href="" class="shopping_sidebar--new-product-name">
-															slim fit cotton shirt
-														</a>
-														<p class="shopping_sidebar--new-product-price">
-															$500.000
-														</p>
-													</div>
-												</div>
-												<!-- shopping_sidebar--new-product-item -->
+												<img src="./images/product-detail/3.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/product-detail/4.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/product-detail/2.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/product-detail/3.jpg" alt="">
 											</div>
 										</div>
-										<!-- Add Arrows -->
-										<div class="swiper-button-next"></div>
-										<div class="swiper-button-prev"></div>
 									</div>
-								</div>
-							</div>
-							<!-- shopping_sidebar--new-product -->
-							<div class="shopping_sidebar--side-banner">
-								<a href="">
-									<img class="shopping_sidebar--side-banner-img" src="./images/side-banner.png" alt="">
-								</a>
-							</div>
-						</div>
-						<!-- shopping_sidebar -->
-					</div>
-					<div class="col-sm-9">
-						<div class="shopping_content">
-							<div class="shopping_content--avatar">
-								<a href=""><img src="./images/avatar-1.jpg" alt="" class="shopping_content--avatar-img"></a>
-							</div>
-							<div class="shopping_content--title">
-								<h3>fashion</h3>
-							</div>
-							<div class="shopping_content--des">
-								<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-							</div>
-							<div class="shopping_content--sub">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</div>
-						</div>
-						<!-- shopping_content -->
-						<div class="shopping_product--action">
-							<div class="row">
-								<div class="col-sm-12">
-									<h4 class="shopping_product--action-label">
-										showing products 1-24 of 10 result
-									</h4>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-6">
-									<div class="shopping_product--action-column">
-										<div class="shopping_product--action-column-left">
-											<i id="action-column-grid" class="fa fa-bars"></i>
-											<i id="action-column-list" class="fa fa-list"></i>
-										</div>
-										<div id="action-column" class="shopping_product--action-column-right">
-											<img id="action-column--two" src="./images/column-2.png" alt="">
-											<img id="action-column--three" src="./images/column-3.png" alt="">
-											<img id="action-column--four" src="./images/column-4.png" alt="">
+									<div class="swiper-container gallery-thumbs">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img src="./images/product-detail/2.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/product-detail/3.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/product-detail/4.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/product-detail/2.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/product-detail/3.jpg" alt="">
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-3">
-									<div class="shopping_product--action-sort">
-										<select name="" id="">
-											<option value="">24 products par page</option>
-											<option value="">50 products par page</option>
-											<option value="">100 products par page</option>
-										</select>
-									</div>
-									
-								</div>
-								<div class="col-sm-3">
-									<div class="shopping_product--action-sort">
-										<select name="" id="">
-											<option value="">sorting items</option>
-											<option value="">50 products</option>
-											<option value="">100 products</option>
-										</select>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-						<div class="shopping_product--list">
-							<div class="row product_tabs--item">
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
+								<div class="col my_shopping--product__info">
+									<div class="my_shopping--product__info--name">
+										<h3>women pink shirt</h3>
+										<div class="my_shopping--product__info--star">
+											<div class="my_shopping--product__info--star-left">
+												<i class="fa fa-star my_shopping--star"></i>
+												<i class="fa fa-star my_shopping--star"></i>
+												<i class="fa fa-star my_shopping--star"></i>
+												<i class="fa fa-star my_shopping--star"></i>
 												<i class="fa fa-star"></i>
 											</div>
-											<a href="product-detail.html" class="new_product--name">Slim fit contton shirt</a>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
+											<div class="my_shopping--product__info--star-right">
+												<p class="my_shopping--product__info--star-ratings">
+													120 ratings
+												</p>
 											</div>
 										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
+										<div class="label-section">
+											<span class="badge badge-secondary">#1 Best seller</span>
+											<span class="in_fashion">in fashion</span>
 										</div>
 									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_2.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_2.2.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
+									<div class="my_shopping--product__info--detail">
+										<div class="my_shopping--product__price">
+											<strong class="my_shopping--product__price--sale">
+												$26.00
+											</strong>
+											<small class="my_shopping--product__price--old">
+												$350.00
+											</small>
+										</div>
+										<div class="my_shopping--product__color">
+											<i class="fa fa-circle my_shopping--product__color-one"></i>
+											<i class="fa fa-circle my_shopping--product__color-two"></i>
+											<i class="fa fa-circle my_shopping--product__color-three"></i>
 										</div>
 									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
+									<div class="my_shopping--product__info--size">
+										<div class="my_shopping--product__info--size--title">
+											<h5>slect size</h5>
+											<a href="#">size chart</a>
 										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_3.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_3.3.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_4.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_4.4.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_4.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_4.4.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_3.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_3.3.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_2.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_2.2.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-								<div class="col-3 new_product--item">
-									<div class="new_product--item-image">
-										<img src="./images/new_product_1.jpg" alt="" class="new_product--image-one">
-										<img src="./images/new_product_1.1.jpg" alt="" class="new_product--image-two">
-										<p class="new_product--text">New</p>
-										<p class="new_product--label">On sale</p>
-										<div class="new_product--icons">
-											<a href="" class="new_product--icon-item new_product--icon-item-one">
-												<i class="fa fa-shopping-cart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-two">
-												<i class="fa fa-heart"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-three">
-												<i class="fa fa-search"></i>
-											</a>
-											<a href="" class="new_product--icon-item new_product--icon-item-four">
-												<i class="fa fa-repeat-alt"></i>
-											</a>
-										</div>
-									</div>
-									<div class="new_product--item-info">
-										<div class="new_product--item-price">
-											<div class="new_product--price-star">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<p class="new_product--name">Slim fit contton shirt</p>
-											<p class="new_product--des">
-												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-											</p>
-											<div class="new_product--prices">
-												<span class="new_product--price-sale">$500.00</span>
-											</div>
-										</div>
-										<div class="new_product--item-color">
-											<span class="new_product--color-first"></span>
-											<span class="new_product--color-second"></span>
-											<span class="new_product--color-three"></span>
-										</div>
-									</div>
-									
-								</div>
-								<!-- new_product--item -->
-							</div>
-							<!-- row product_tabs--item -->
-							<div class="row product_tabs--pagination">
-								<div class="col-sm-12 col-md-6">
-									<nav aria-label="">
-										<ul class="pagination">
-											<li class="page-item">
-												<a class="page-link" href="#">
-													<i class="fa fa-chevron-left"></i>
+
+										<ul class="my_shopping--product__info--size--list">
+											<li class="my_shopping--product__info--size--item">
+												<a href="" class="my_shopping--product__info--size--link active">
+													s
 												</a>
 											</li>
-											<li class="page-item">
-												<a class="page-link" href="#">1</a>
+											<li class="my_shopping--product__info--size--item">
+												<a href="" class="my_shopping--product__info--size--link">
+													m
+												</a>
 											</li>
-											<li class="page-item active">
-												<a class="page-link" href="#">2</a>
+											<li class="my_shopping--product__info--size--item">
+												<a href="" class="my_shopping--product__info--size--link">
+													l
+												</a>
 											</li>
-											<li class="page-item">
-												<a class="page-link" href="#">3</a>
-											</li>
-											<li class="page-item">
-												<a class="page-link" href="#">
-													<i class="fa fa-chevron-right"></i>
+											<li class="my_shopping--product__info--size--item">
+												<a href="" class="my_shopping--product__info--size--link">
+													xl
 												</a>
 											</li>
 										</ul>
-									</nav>
+										<div class="my_shopping--product__info--quantity">
+											<h5>quantity</h5>
+											<div class="my_shopping--product__info--quantity--number">
+												<a href="" class="my_shopping--product__info--quantity--sub">
+													<i class="fa fa-minus"></i>
+												</a>
+												<input type="" name="" value="1">
+												<a href="" class="my_shopping--product__info--quantity--add">
+													<i class="fa fa-plus"></i>
+												</a>
+											</div>
+											<div class="my_shopping--product__info--cart">
+												<a href="" class="btn btn-danger">
+													<i class="fa fa-shopping-cart my_shopping--icon-cart"></i>add to cart
+												</a>
+												<a href="" class="btn btn-warning">
+													<i class="fa fa-bookmark my_shopping--icon-cart"></i>wishlist
+												</a>
+											</div>
+										</div>
+										<!-- my_shopping--product__info--quantity -->
+										<div class="my_shopping--product__info--message">
+											<i class="my_shopping--product__info--message-icon fa fa-truck-moving"></i>
+											<p class="my_shopping--product__info--message-mes">Free shipping for orders above $500 USD</p>
+										</div>
+										<!-- my_shopping--product__info--message -->
+									</div>
+									<div class="my_shopping--product__info--sale-end">
+										<h5>sales ends in</h5>
+										<div class="my_shopping--product__info--sale-end-timer">
+											<span>
+												25
+												<span class="padding-1">:</span>
+												<span class="timer-cal">days</span>
+											</span>
+											<span>
+												23
+												<span class="padding-1">:</span>
+												<span class="timer-cal">hrs</span>
+											</span>
+											<span>
+												13
+												<span class="padding-1">:</span>
+												<span class="timer-cal">min</span>
+											</span>
+											<span>
+												57
+												<span class="padding-1">:</span>
+												<span class="timer-cal">sec</span>
+											</span>
+										</div>
+									</div>
+									<div class="my_shopping--product__info--sale-end">
+										<h5>shipping info</h5>
+										<ul class="my_shopping--product__info--list">
+											<li class="my_shopping--product__info--item">
+												<p>100% Original Products</p>
+											</li>
+											<li class="my_shopping--product__info--item">
+												<p>Free Delivery on order above Rs. 799</p>
+											</li>
+											<li class="my_shopping--product__info--item">
+												<p>Pay on delivery is available</p>
+											</li>
+											<li class="my_shopping--product__info--item">
+												<p>Easy 30 days returns and exchanges</p>
+											</li>
+										</ul>
+									</div>
+									<div class="my_shopping--product__info--sale-end my_shopping--share">
+										<h5>share it</h5>
+										<ul class="my_shopping--product__info--list">
+											<li class="my_shopping--product__info--item">
+												<a href="" class="my_shopping--product__info--link">
+													<i class="fab fa-facebook-f"></i>
+												</a>
+											</li>
+											<li class="my_shopping--product__info--item">
+												<a href="" class="my_shopping--product__info--link">
+													<i class="fab fa-google-plus"></i>
+												</a>
+											</li>
+											<li class="my_shopping--product__info--item">
+												<a href="" class="my_shopping--product__info--link">
+													<i class="fab fa-twitter"></i>
+												</a>
+											</li>
+											<li class="my_shopping--product__info--item">
+												<a href="" class="my_shopping--product__info--link">
+													<i class="fab fa-instagram"></i>
+												</a>
+											</li>
+											<li class="my_shopping--product__info--item">
+												<a href="" class="my_shopping--product__info--link">
+													<i class="fas fa-rss"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="my_shopping--product__info--sale-end no-boder">
+										<h5>100% secure payment</h5>
+										<img src="./images/payment.png" alt="">
+									</div>
 								</div>
-								<div class="col-sm-12 col-md-6">
-									<p class="product_tabs--pagination-label">
-										showing products 1-24 of 10 result
-									</p>
+							</div>
+						</div>
+						<!-- col-3 -->
+					</div>
+					<!-- row -->
+					<div class="row">
+						<div class="my_shopping--tabs">
+							<ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
+								<li class="nav-item"><a class="nav-link active" id="top-home-tab" data-bs-toggle="tab" href="#top-home" role="tab" aria-selected="true"><i class="icofont icofont-ui-home"></i>Details</a>
+									<div class="material-border"></div>
+								</li>
+								<li class="nav-item"><a class="nav-link" id="profile-top-tab" data-bs-toggle="tab" href="#top-profile" role="tab" aria-selected="false"><i class="icofont icofont-man-in-glasses"></i>Specification</a>
+									<div class="material-border"></div>
+								</li>
+								<li class="nav-item"><a class="nav-link" id="contact-top-tab" data-bs-toggle="tab" href="#top-contact" role="tab" aria-selected="false"><i class="icofont icofont-contacts"></i>Video</a>
+									<div class="material-border"></div>
+								</li>
+								<li class="nav-item"><a class="nav-link" id="review-top-tab" data-bs-toggle="tab" href="#top-review" role="tab" aria-selected="false"><i class="icofont icofont-contacts"></i>Write Review</a>
+									<div class="material-border"></div>
+								</li>
+							</ul>
+							<div class="tab-content nav-material" id="top-tabContent">
+								<div class="tab-pane fade active show" id="top-home" role="tabpanel" aria-labelledby="top-home-tab">
+									<div class="product-tab-discription">
+										<div class="part">
+											<p>The Model is wearing a white blouse from our stylist's collection, see the image
+												for a mock-up of what the actual blouse would look like.it has text written on
+											it in a black cursive language which looks great on a white color.</p>
+										</div>
+										<div class="part">
+											<h5 class="inner-title">fabric:</h5>
+											<p>Art silk is manufactured by synthetic fibres like rayon. It's light in weight and
+												is soft on the skin for comfort in summers.Art silk is manufactured by synthetic
+												fibres like rayon. It's light in weight and is soft on the skin for comfort in
+											summers.</p>
+										</div>
+										<div class="part">
+											<h5 class="inner-title">size &amp; fit:</h5>
+											<p>The model (height 5'8") is wearing a size S</p>
+										</div>
+										<div class="part">
+											<h5 class="inner-title">Material &amp; Care:</h5>
+											<p>Top fabric: pure cotton</p>
+											<p>Bottom fabric: pure cotton</p>
+											<p>Hand-wash</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="top-profile" role="tabpanel" aria-labelledby="profile-top-tab">
+									<p>The Model is wearing a white blouse from our stylist's collection, see the image for a
+										mock-up of what the actual blouse would look like.it has text written on it in a black
+									cursive language which looks great on a white color.</p>
+									<div class="single-product-tables">
+										<table>
+											<tbody>
+												<tr>
+													<td>Sleeve Length</td>
+													<td>Sleevless</td>
+												</tr>
+												<tr>
+													<td>Neck</td>
+													<td>Round Neck</td>
+												</tr>
+												<tr>
+													<td>Occasion</td>
+													<td>Sports</td>
+												</tr>
+											</tbody>
+										</table>
+										<table>
+											<tbody>
+												<tr>
+													<td>Fabric</td>
+													<td>Polyester</td>
+												</tr>
+												<tr>
+													<td>Fit</td>
+													<td>Regular Fit</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="top-contact" role="tabpanel" aria-labelledby="contact-top-tab">
+									<div class="">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/BUWzX78Ye_8" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="top-review" role="tabpanel" aria-labelledby="review-top-tab">
+									<form class="theme-form">
+										<div class="form-row row">
+											<div class="col-md-12">
+												<div class="media">
+													<label>Rating</label>
+													<div class="media-body ms-3">
+														<div class="rating three-star"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="name">Name</label>
+												<input type="text" class="form-control" id="name" placeholder="Enter Your name" required="">
+											</div>
+											<div class="col-md-6">
+												<label for="email">Email</label>
+												<input type="text" class="form-control" id="email" placeholder="Email" required="">
+											</div>
+											<div class="col-md-12">
+												<label for="review">Review Title</label>
+												<input type="text" class="form-control" id="review" placeholder="Enter your Review Subjects" required="">
+											</div>
+											<div class="col-md-12">
+												<label for="review">Review Title</label>
+												<textarea class="form-control" placeholder="Wrire Your Testimonial Here" id="exampleFormControlTextarea1" rows="6"></textarea>
+											</div>
+											<div class="col-md-12">
+												<button class="btn btn-solid" type="submit">Submit YOur
+												Review</button>
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- row -->
+				<!-- my_shopping--product__list -->
 			</div>
 		</div>
 		<!-- shopping_body -->
@@ -3512,162 +2923,33 @@
 	<!-- my_shopping -->
 
 	<!-- import javascript -->
+	<script src="../libs/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="../libs/jquery.easing.1.3.js"></script>
+	<script src="./js/app.js"></script>
 	<script src="../libs/bootstrap.min.js"></script>
 	<script src="../libs/swiper-bundle.min.js"></script>
 	<script>
-		var swiper = new Swiper('.swiper-container', {
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-		});
-		if(window.innerWidth < 992){
-			var swiper = new Swiper('.swiper-containers', {
-				slidesPerView: 2,
-				spaceBetween: 30,
-				slidesPerGroup: 2,
-				loop: true,
-				loopFillGroupWithBlank: true,
-			});
-
-			var mySwiper2 = new Swiper('.swiper-container-blog', {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				slidesPerGroup: 1,
-				loop: true,
-
-			})
-		}
-
-		if(window.innerWidth < 768){
-			var mySwiperBrand = new Swiper('.swiper-container-brand', {
-				slidesPerView: 3,
-				spaceBetween: 30,
-				slidesPerGroup: 3,
-				loop: true,
-			});
-		}
-
-		if(window.innerWidth < 600){
-			var mySwiper3 = new Swiper('.swiper-container-instagram', {
-				slidesPerView: 4,
-				slidesPerGroup: 4,
-				loop: true,
-
-			});
-		}
-
-		if(window.innerWidth > 600 && window.innerWidth < 1023){
-			var mySwiper3 = new Swiper('.swiper-container-instagram', {
-				slidesPerView: 5,
-				slidesPerGroup: 5,
-				loop: true,
-
-			});
-		}
-		if(window.innerWidth > 768 && window.innerWidth < 1023){
-			var mySwiperBrand = new Swiper('.swiper-container-brand', {
-				slidesPerView: 4,
-				spaceBetween: 30,
-				slidesPerGroup: 4,
-				loop: true,
-			});
-		}
-
-		if(window.innerWidth > 1023){
-			var mySwiper3 = new Swiper('.swiper-container-instagram', {
-				slidesPerView: 6,
-				slidesPerGroup: 6,
-				loop: true,
-
-			});
-		}
-
-		if(window.innerWidth < 1200 && window.innerWidth >= 768){
-			var mySwiper2 = new Swiper('.swiper-container-blog', {
-				slidesPerView: 2,
-				spaceBetween: 30,
-				slidesPerGroup: 2,
-				loop: true,
-
-			});
-		}
-
-		if(window.innerWidth < 1200 && window.innerWidth >= 992){
-			var swiper = new Swiper('.swiper-containers', {
-				slidesPerView: 3,
-				spaceBetween: 30,
-				slidesPerGroup: 3,
-				loop: true,
-				loopFillGroupWithBlank: true,
-			});
-		}
-
-		if(window.innerWidth >= 1200){
-			var swiper = new Swiper('.swiper-containers', {
-				slidesPerView: 4,
-				spaceBetween: 30,
-				slidesPerGroup: 4,
-				loop: true,
-				loopFillGroupWithBlank: true,
-			});
-
-			var mySwiper2 = new Swiper('.swiper-container-blog', {
-				slidesPerView: 3,
-				spaceBetween: 30,
-				slidesPerGroup: 3,
-				loop: true,
-
-			});
-			var mySwiperBrand = new Swiper('.swiper-container-brand', {
-				slidesPerView: 5,
-				spaceBetween: 30,
-				slidesPerGroup: 5,
-				loop: true,
-			});
-		}
-	</script>
-	<!-- import jquery -->
-	<script src="../libs/jquery-3.5.1.js"></script>
-	<script type="text/javascript" src="../libs/jquery.easing.1.3.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
-	<!-- price -->
-	<script>
-
-      // Range Slider
-      var slider = new Slider("#range", {
-      	min: 0,
-      	max: 1000,
-      	value: [0, 1000],
-      	range: true,
-      });
-
-      var value = document.querySelector('#range').value;
-
-      var res	= value.split(",");
-
-      var price_min = document.querySelector('#shopping_sidebar--price-min');
-      var price_max = document.querySelector('#shopping_sidebar--price-max');
-      price_min.innerHTML = res[0];
-      price_max.innerHTML = res[1];
-
-
-
-      function myFunction(){
-      	var value = document.querySelector('#range').value;
-
-      	var res	= value.split(",");
-
-      	var price_min = document.querySelector('#shopping_sidebar--price-min');
-      	price_min.innerHTML = res[0];
-      	var price_max = document.querySelector('#shopping_sidebar--price-max');
-      	price_max.innerHTML = res[1];
-
-      	console.log(price_min);
-      	console.log(price_max);
-      }
-  </script>
-  <script src="./js/app.js"></script>
-  <script src="./js/shop.js"></script>
+		var galleryThumbs = new Swiper('.gallery-thumbs', {
+			spaceBetween: 10,
+			slidesPerView: 3,
+			loop: true,
+			freeMode: true,
+			      loopedSlides: 5, //looped slides should be the same
+			      watchSlidesVisibility: true,
+			      watchSlidesProgress: true,
+			  });
+		var galleryTop = new Swiper('.gallery-top', {
+			spaceBetween: 10,
+			loop: true,
+      loopedSlides: 5, //looped slides should be the same
+      navigation: {
+      	nextEl: '.swiper-button-next',
+      	prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+      	swiper: galleryThumbs,
+      },
+  });
+</script>
 </body>
 </html>

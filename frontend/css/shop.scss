@@ -31,6 +31,10 @@ $gray_b: #f8f8f8;
 .breadcrumb_page--theme {
 	display: flex;
 	justify-content: flex-end;
+	.breadcrumb{
+		padding: 0;
+		background-color: transparent;
+	}
 }
 
 .breadcrumb-item{

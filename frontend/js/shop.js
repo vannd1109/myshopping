@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	var action_column = document.querySelector("#action-column");
 	action_list.addEventListener('click', function(){
 		action_column.style.display = "none";
-
 		for (var i = 0; i < product_items.length; i++) {
 			product_items[i].classList.remove("col-3");
 			product_items[i].classList.add("col-12");

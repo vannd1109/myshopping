@@ -508,7 +508,7 @@
 								<!-- col-3 -->
 							</div>
 						</div>
-						<!-- my_shopping--content-right-content -->
+						<!-- my_shopping--product__list -->
 						<footer class="my_shopping--footer">
 							<div class="my_shopping--footer__left">
 								<p>
@@ -538,22 +538,18 @@
 			slidesPerView: 4,
 			loop: true,
 			freeMode: true,
-      loopedSlides: 5, //looped slides should be the same
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-  });
+		    loopedSlides: 5, //looped slides should be the same
+		    watchSlidesVisibility: true,
+		    watchSlidesProgress: true,
+		});
 		var galleryTop = new Swiper('.gallery-top', {
 			spaceBetween: 10,
 			loop: true,
-      loopedSlides: 5, //looped slides should be the same
-      navigation: {
-      	nextEl: '.swiper-button-next',
-      	prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-      	swiper: galleryThumbs,
-      },
-  });
-</script>
+		    loopedSlides: 5,
+		    thumbs: {
+		    	swiper: galleryThumbs,
+		    },
+		});
+	</script>
 </body>
 </html>

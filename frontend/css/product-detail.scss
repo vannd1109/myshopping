@@ -1,0 +1,186 @@
+.shopping_body{
+	.product-detail{
+		.my_shopping--product__list{
+			.my_shopping--product__item{
+				.my_shopping--product__body{
+					.my_shopping--product__image{
+						.gallery-top{
+							height: 700px;
+							.swiper-slide{
+								overflow: hidden;
+								img{
+									width: 100%;
+								}
+							}
+						}
+						.gallery-thumbs{
+							.swiper-slide{
+								height: auto;
+								overflow: hidden;
+								img{
+									width: 100%;
+								}
+							}
+						}
+					}
+					.my_shopping--product__info{
+						.my_shopping--product__info--name{
+							border-bottom: none;
+							padding-bottom: 0;
+							.my_shopping--product__info--star{
+								display: flex;
+								align-items: center;
+								.my_shopping--product__info--star-right{
+									padding-left: 10px;
+									.my_shopping--product__info--star-ratings {
+										font-size: 16px;
+										font-weight: 600;
+										margin-bottom: 0;
+									}
+								}
+							}
+							.label-section{
+								.badge{
+									background-color: #a09c9c;
+									padding: 5px 10px;
+								}
+								.in_fashion {
+									text-transform: capitalize;
+								}
+							}
+						}
+						.my_shopping--product__info--detail{
+							border-bottom: 1px dashed #ded4d4;
+							.my_shopping--product__color{
+								i{
+									cursor: pointer;
+									position: relative;
+									&:after{
+										position: absolute;
+										content: "\2713";
+										top: 50%;
+										left: 50%;
+										font-size: 18px;
+										color: black;
+										transform: translateX(-50%) translateY(-50%);
+									}
+								}
+							}
+						}
+						.my_shopping--product__info--size{
+							h5{
+								font-size: 16px;
+							}
+							border-bottom: 1px dashed #ded4d4;
+							.my_shopping--product__info--quantity{
+								.my_shopping--product__info--cart{
+									.my_shopping--icon-cart{
+										display: inline-block;
+										margin-right: 10px;
+									}
+								}
+							}
+							.my_shopping--product__info--message{
+								display: flex;
+								align-items: center;
+								background-color: #e4e4e4;
+								padding: 10px 10px;
+								margin: 20px 0;
+								.my_shopping--product__info--message-icon{
+									color: #ff4c3b;
+									display: inline-block;
+									margin-right: 10px;
+								}
+								.my_shopping--product__info--message-mes{
+									margin-bottom: 0;
+									font-size: 15px;
+								}
+							}
+						}
+						.my_shopping--product__info--sale-end{
+							border-bottom: 1px dashed gray;
+							padding: 15px 0 10px 0;
+							h5{
+								margin-bottom: 5px;
+								font-size: 16px;
+							}
+							.my_shopping--product__info--list {
+								padding: 0;
+								margin-bottom: 0;
+								list-style: none;
+								.my_shopping--product__info--item{
+									padding: 2px 0;
+									p{
+										margin-bottom: 0;
+										color: #a2a2a2;
+										font-size: 16px;
+										font-weight: 400;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.my_shopping--tabs{
+				.nav-tabs{
+					margin-bottom: 20px;
+					.nav-link {
+						border: none;
+						text-transform: uppercase;
+						color: #4e4b4b;
+						font-size: 16px;
+						font-weight: 700;
+						border-radius: 0;
+						padding-bottom: 15px;
+						&.active{
+							color: #ff4c3b !important;
+							border-bottom: 2px solid #ff4c3b !important;
+						}
+					}
+				}
+				.tab-content{
+					.product-tab-discription{
+						.part{
+							margin-top: 20px;
+							.inner-title{
+								text-transform: capitalize;
+								font-size: 16px;
+								font-weight: 600;
+								color: #252525;
+							}
+							p{
+								color: gray;
+								font-weight: 400;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+.my_shopping--star{
+	color: #ffa200 !important;
+}
+
+.no-boder{
+	border-bottom: none !important;
+}
+
+.my_shopping--share{
+	.my_shopping--product__info--item {
+		display: inline-block;
+		padding: 5px 10px !important;
+		.my_shopping--product__info--link {
+			color: #333333;
+			transition: 0.3s;
+			&:hover{
+				color: #ff4c3b;
+			}
+		}
+	}
+}
