@@ -562,8 +562,7 @@ html, body {
 
 .new_product .new_product--item {
   width: 100%;
-  height: auto;
-  cursor: pointer; }
+  height: auto; }
 
 .new_product--item {
   overflow: hidden;
