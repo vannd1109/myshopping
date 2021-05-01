@@ -314,6 +314,11 @@
 					color: black;
 					font-weight: 500;
 				}
+				.my_shopping--product-choose-info-price{
+					del{
+						color: #9c9898;
+					}
+				}
 			}
 		}
 		.my_shopping--product-choose-form{
@@ -369,3 +374,6 @@
 		transform: translateY(100px); 
 	}
 }
+
+// import
+@import "mobile";

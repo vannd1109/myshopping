@@ -1303,6 +1303,7 @@ display: flex;
 .confirm_left--link:hover{
   background-color: #ffffff;
   color: $black_s;
+  border-color: #ff4c3b;
 }
 
 .comfirm {
@@ -1411,11 +1412,12 @@ display: flex;
 	width: 100%;
 }
 
-.footer_theme--right-item p {
+.footer_theme--right-item a {
 	margin: 0;
 	font-size: 13px;
 	color: $gray_s;
 	padding-bottom: 15px;
+  text-decoration: none;
 }
 
 .footer_theme--right-item i {
@@ -1801,8 +1803,6 @@ display: flex;
     &:nth-child(4){
       .nav_item--list{
         width: 150px;
-        // left: -50% !important;
-        // transform: translateX(-50%) translateY(-100%);
       }
     }
   }
