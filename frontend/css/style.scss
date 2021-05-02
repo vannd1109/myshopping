@@ -12,6 +12,11 @@ $gray_s2: #f1e7e6;
 $brown_s: #bfbfbf;
 // Backgroud
 $gray_b: #f8f8f8;
+
+
+.my_shopping--color-default{
+  color: $orange_s !important;
+}
 // Body
 body {
 	background: #ffffff;

@@ -239,6 +239,57 @@
 	.footer_theme {
 		padding-top: 20px;
 	}
+
+	// cart
+	.my_shopping--cart-table{
+		.my_shopping--table-head{
+			th{
+				font-size: 13px;
+				&.my_shopping--table-action,
+				&.my_shopping--table-number,
+				&.my_shopping--table-price{
+					span{
+						display: none;
+					}
+				}
+				&.my_shopping--table-name{
+					span{
+						position: relative;
+						left: 100%;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		.my_shopping--table-price {
+			display: none;
+		}
+		.my_shopping--table-product-name{
+			width: 120px;
+		}
+		.my_shopping--table-number{
+			input{
+				width: 40px !important;
+			}
+		}
+		.my_shopping--table-product-name{
+			a{
+				display: flex;
+				flex-direction: column;
+				.my_shopping--table-price-mobile {
+					display: block !important;
+					font-size: 20px;
+					font-weight: 500;
+					color: #ff4c3b;
+				}
+			}
+		}
+		.my_shopping--table-action{
+			.my_shopping--icon{
+				font-size: 25px !important;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 767px) and(max-width: 992px) {
@@ -347,6 +398,10 @@
 
 	.footer_theme--right-label {
 		padding: 15px 0;
+	}
+
+	.my_shopping--cart-counter{
+		margin: 30px 0 10px 10px;
 	}
 }
 
@@ -788,6 +843,7 @@
 @media only screen and (max-width: 576px) {
 	.my_shopping{
 		overflow-x: hidden;
+		padding-bottom: 60px;
 	}
 	.menu{
 		position: relative;
@@ -817,7 +873,7 @@
 		.breadcrumb_page--theme {
 			.breadcrumb{
 				position: absolute;
-				top: 15px;
+				top: 10px;
 				left: 50%;
 				transform: translate(-50%);
 				height: 100px;
@@ -832,6 +888,17 @@
 
 	.shopping_body .product-detail .my_shopping--product__list .my_shopping--product__item .my_shopping--product__body .my_shopping--product__image .gallery-top {
 		height: 600px;
+	}
+	.my_shopping--cart-counter .my_shopping--cart-counter-check .confirm_left--link {
+		font-size: 13px;
+	}
+	.shopping_body{
+		.my_shopping--cart-btn{
+			.confirm_left--link{
+				padding:5px 10px !important;
+				font-size: 13px;
+			}
+		}
 	}
 }
 
@@ -897,6 +964,7 @@
 @media (max-width: 992px){
 	.shopping_body{
 		padding: 0;
+		margin-bottom: 30px;
 		.my_shopping--product__list{
 			.my_shopping--product__body{
 				padding: 0 30px;
@@ -965,6 +1033,11 @@
 				}
 			}
 		}
+	}
+
+	// cart
+	.my_shopping--table-total{
+		display: none;
 	}
 }
 
