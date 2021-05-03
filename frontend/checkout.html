@@ -2380,8 +2380,166 @@
 		<!-- breadcrumb_shopping -->
 		<div class="shopping_body">
 			<div class="container">
-				<div class="row">
-					
+				<div class="row my_shopping--checkout">
+					<div class="col-lg-6">
+						<div class="my_shopping--checkout-detail">
+							<div class="my_shopping--checkout-detail-label">
+								<h5>billing details</h5>
+							</div>
+							<div class="row my_shopping--checkout-form">
+								<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="field-label">first name</div>
+									<input type="text">
+								</div>
+								<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="field-label">last name</div>
+									<input type="text">
+								</div>
+								<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="field-label">phone</div>
+									<input type="number">
+								</div>
+								<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="field-label">email address</div>
+									<input type="email">
+								</div>
+								<div class="form-group col-12">
+									<div class="field-label">country</div>
+									<select name="" id="">
+										<option value="">india</option>
+										<option value="">south africa</option>
+										<option value="">united state</option>
+										<option value="">Australia</option>
+									</select>
+								</div>
+								<div class="form-group col-12">
+									<div class="field-label">address</div>
+									<input type="text" placeholder="Street address">
+								</div>
+								<div class="form-group col-12">
+									<div class="field-label">town/city</div>
+									<input type="text">
+								</div>
+								<div class="form-group col-12">
+									<div class="field-label">state/country</div>
+									<input type="text">
+								</div>
+								<div class="form-group col-12">
+									<div class="field-label">postal code</div>
+									<input type="text">
+								</div>
+								<div class="form-group col-12 my_shopping--checkout-create">
+									<input type="checkbox" id="checkout-create">
+									<label for="checkout-create">create an account?</label>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-6">
+						<div class="my_shopping--checkout-order">
+							<div class="my_shopping--checkout-order-info">
+								<div class="my_shopping--checkout-order-title">
+									<span>product</span>
+									<span>total</span>
+								</div>
+								<div class="my_shopping--checkout-order-quantity">
+									<ul class="my_shopping--checkout-list">
+										<li class="my_shopping--checkout-item">
+											<span class="my_shopping--checkout-number">
+												pink slim shirt
+												<small>x</small>
+												<strong>1</strong>
+											</span>
+											<span class="my_shopping--checkout-price">
+												$25.10
+											</span>
+										</li>
+										<li class="my_shopping--checkout-item">
+											<span class="my_shopping--checkout-number">
+												slim fit shirt
+												<small>x</small>
+												<strong>1</strong>
+											</span>
+											<span class="my_shopping--checkout-price">
+												$550.00
+											</span>
+										</li>
+									</ul>
+								</div>
+								<div class="my_shopping--checkout-order-sub-total">
+									<ul class="my_shopping--checkout-list">
+										<li class="my_shopping--checkout-item">
+											<span class="my_shopping--checkout-number">
+												subtotal
+											</span>
+											<span class="my_shopping--checkout-price">
+												$380.10
+											</span>
+										</li>
+										<li class="my_shopping--checkout-item">
+											<span class="my_shopping--checkout-number">
+												shipping
+											</span>
+											<div class="my_shopping--checkout-shipping">
+												<div class="my_shopping--checkout-shipping-option">
+													<input type="checkbox" id="free-shipping">
+													<label for="free-shipping">free shipping</label>
+												</div>
+												<div class="my_shopping--checkout-shipping-option">
+													<input type="checkbox" id="local-pickup">
+													<label for="local-pickup">local pickup</label>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="my_shopping--checkout-order-total">
+									<ul class="my_shopping--checkout-list">
+										<li class="my_shopping--checkout-item">
+											<span class="my_shopping--checkout-number">
+												total
+											</span>
+											<span class="my_shopping--checkout-price">
+												$620.00
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="my_shopping--checkout-order-payment">
+								<div class="my_shopping--checkout-order-payment-options">
+									<ul class="my_shopping--checkout-list">
+										<li class="my_shopping--checkout-item">
+											<div class="my_shopping--checkout-payment-option">
+												<input type="radio" name="payment-option" id="payment-1" checked>
+												<label for="payment-1">check payment</label>
+											</div>
+										</li>
+										<li class="my_shopping--checkout-item">
+											<div class="my_shopping--checkout-payment-option">
+												<input type="radio" id="payment-2" name="payment-option">
+												<label for="payment-2">cash on delivery</label>
+											</div>
+										</li>
+										<li class="my_shopping--checkout-item">
+											<div class="my_shopping--checkout-payment-option">
+												<input type="radio" id="payment-3" name="payment-option">
+												<label for="payment-3">paypal</label>
+											</div>
+										</li>
+									</ul>
+									<div class="my_shopping--payment-img">
+										<img src="./images/paypal.png" alt="">
+									</div>
+								</div>
+								<div class="my_shopping--checkout-order-submit">
+									<a href="" class="btn confirm_left--link">place order</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
