@@ -11,30 +11,33 @@
 </head>
 <body>
 	<div class="my_shoping">
-		<div class="my_shopping--header">
+		<div class="my_shopping--header" id="my_shopping--header">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2 my_shopping--logo">
+					<div class="col col-lg-2 my_shopping--logo" id="my_shopping--logo">
 						<a href="#">
 							<img src="./images/logo.png" alt="">
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-8 col-lg-10" id="my_shopping--header-right">
 						<div class="my_shopping--header-right">
 							<div class="my_shopping--bar">
-								<i class="fa fa-bars"></i>
+								<i class="fa fa-bars" id="my_shopping--bar-icon"></i>
+								<i class="fa fa-bars" id="my_shopping--show-side-bar"></i>
 							</div>
 							<!-- my_shopping--bar -->
-							<div class="my_shopping--intro">
+							<div class="my_shopping--intro" id="my_shopping--intro">
 								<div class="my_shopping--intro__search">
-									<div class="my_shopping--intro__search-icon">
-										<i class="fa fa-search"></i>
+									<div class="my_shopping--intro__search-body">
+										<div class="my_shopping--intro__search-icon">
+											<i class="fa fa-search"></i>
+										</div>
+										<!-- my_shopping--intro__search-icon -->
+										<div class="my_shopping--intro__search-input">
+											<input type="text" placeholder="Search...">
+										</div>
+										<!-- my_shopping--intro__search-input -->
 									</div>
-									<!-- my_shopping--intro__search-icon -->
-									<div class="my_shopping--intro__search-input">
-										<input type="text" placeholder="Search...">
-									</div>
-									<!-- my_shopping--intro__search-input -->
 								</div>
 								<!-- my_shopping--intro__search -->
 								<div class="my_shopping--intro__action">
@@ -58,6 +61,11 @@
 								<!-- my_shopping--intro__action -->
 							</div>
 							<!-- my_shopping--intro -->
+							<div class="my_shopping--intro-open" id="my_shopping--intro-open">
+								<span><i class="fa fa-circle"></i></span>
+								<span><i class="fa fa-circle"></i></span>
+								<span><i class="fa fa-circle"></i></span>
+							</div>
 						</div>
 						<!-- my_shopping--header-right -->
 					</div>
@@ -67,11 +75,10 @@
 			</div>
 		</div>
 		<!-- my_shopping--header -->
-		<div class="clear"></div>
-		<div class="my_shopping--content">
+		<div class="my_shopping--content" id="my_shopping--content">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2 my_shopping--content-sidebar">
+					<div class="col-2 my_shopping--content-sidebar" id="my_shopping--content-sidebar">
 						<div class="my_shopping--content-sidebar-content">
 							<div class="my_shopping--content-sidebar-user">
 								<div class="my_shopping--content-sidebar-user-img">
@@ -342,7 +349,7 @@
 						</div>
 						<!-- my_shopping--content-sidebar-content -->
 					</div>
-					<div class="col my_shopping--content-right">
+					<div class="col-10 my_shopping--content-right" id="my_shopping--content-right">
 						<div class="row my_shopping--content-right-header">
 							<div class="col-6">
 								<div class="my_shopping--content-right-header-left">
@@ -370,7 +377,7 @@
 						<!-- my_shopping--content-right-header -->
 						<div class="my_shopping--total">
 							<div class="row">
-								<div class="col-6">
+								<div class="col-sm-12 col-md-6">
 									<div class="my_shopping--total-item my_shopping--total-item-earning">
 										<div class="my_shopping-total-icon">
 											<i class="fa fa-location-arrow"></i>
@@ -386,7 +393,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-6">
+								<div class="col-sm-12 col-md-6">
 									<div class="my_shopping--total-item my_shopping--total-item-product">
 										<div class="my_shopping-total-icon">
 											<i class="fa fa-box"></i>
@@ -403,7 +410,7 @@
 									</div>
 								</div>
 								<!-- col-6 -->
-								<div class="col-6">
+								<div class="col-sm-12 col-md-6">
 									<div class="my_shopping--total-item">
 										<div class="my_shopping-total-icon">
 											<i class="fa fa-comment-alt"></i>
@@ -420,7 +427,7 @@
 									</div>
 								</div>
 								<!-- col-6 -->
-								<div class="col-6">
+								<div class="col-sm-12 col-md-6">
 									<div class="my_shopping--total-item my_shopping--total-item-vendor">
 										<div class="my_shopping-total-icon">
 											<i class="fa fa-location-arrow"></i>

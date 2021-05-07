@@ -1703,6 +1703,13 @@ html, body {
   background: #ffffff;
   margin-bottom: 30px; }
 
+.shopping-cart a {
+  display: block;
+  color: #000000;
+  transition: 0.2s; }
+  .shopping-cart a:hover {
+    color: #ff4c3b; }
+
 .setting_icon {
   font-size: 20px; }
 
