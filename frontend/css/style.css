@@ -51,12 +51,15 @@ html, body {
         opacity: 1;
         visibility: visible;
         transform: translateY(0px); }
+      .top_header .top_header--right .account:hover .account_icon:first-child {
+        color: #ff4c3b; }
       .top_header .top_header--right .account .account_title {
         margin: 0;
         font-size: 13px; }
         .top_header .top_header--right .account .account_title .account_icon {
           font-size: 12px;
-          margin: 0 5px; }
+          margin: 0 5px;
+          transition: 0.4s; }
       .top_header .top_header--right .account .account_list {
         list-style: none;
         padding: 0px;
@@ -79,10 +82,14 @@ html, body {
             .top_header .top_header--right .account .account_list .account_item .account_link:hover {
               color: #ff4c3b; }
     .top_header .top_header--right .like {
-      margin-right: 30px; }
+      padding: 0 30px;
+      cursor: pointer; }
+      .top_header .top_header--right .like:hover .like_icon {
+        color: #ff4c3b; }
       .top_header .top_header--right .like .like_icon {
         font-size: 14px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: 0.4s; }
 
 .menu {
   display: flex;
@@ -126,14 +133,15 @@ html, body {
         position: static !important; }
         .menu .menu_content .menu_main .navbar .nav-link {
           text-transform: uppercase;
-          padding: 0 10px !important;
+          padding: 0 15px;
           color: #222222;
           font-size: 15px;
           transition: 0.4s;
           position: relative;
           margin-bottom: 0;
           cursor: pointer;
-          outline: none; }
+          outline: none;
+          font-weight: 400; }
           .menu .menu_content .menu_main .navbar .nav-link .nav_link--sub {
             position: absolute;
             top: 15px;
@@ -634,11 +642,12 @@ html, body {
   opacity: 1;
   visibility: hidden;
   transition: 0.4s; }
-
-.new_product--icons .new_product--icon-item {
-  color: #999999;
-  text-align: center;
-  margin-bottom: 5px; }
+  .new_product--icons .new_product--icon-item {
+    color: #999999;
+    text-align: center;
+    margin-bottom: 5px; }
+    .new_product--icons .new_product--icon-item i {
+      font-weight: 200; }
 
 .new_product--item:hover .new_product--icons {
   opacity: 1;
@@ -764,8 +773,8 @@ html, body {
   padding-bottom: 20px; }
 
 .transport .transport_item:nth-child(2) {
-  border-left: 1px solid #999999;
-  border-right: 1px solid #999999; }
+  border-left: 1px solid #ece8e8f8;
+  border-right: 1px solid #ece8e8f8; }
 
 .transport_icon {
   margin-right: 10px;
@@ -809,8 +818,8 @@ html, body {
   margin-right: 10px; }
 
 .transport_border {
-  border-top: 1px solid #999999;
-  border-bottom: 1px solid #999999;
+  border-top: 1px solid #ece8e8f8;
+  border-bottom: 1px solid #ece8e8f8;
   padding: 40px 0; }
 
 .transport_item:hover .transport_content-label {
@@ -975,7 +984,7 @@ html, body {
   content: "";
   top: 0;
   left: 0;
-  border-top: 1px solid #999999;
+  border-top: 1px solid #ece8e8f8;
   width: 97%;
   margin: 0 12px; }
 
@@ -984,7 +993,7 @@ html, body {
   background-color: #f9f9f9; }
 
 .confirm_left {
-  border-right: 1px solid #999999; }
+  border-right: 1px solid #ece8e8f8; }
 
 .confirm_right {
   display: flex;
@@ -994,7 +1003,8 @@ html, body {
   text-transform: uppercase;
   font-size: 20px;
   color: #222222;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 5px; }
 
 .confirm_left--des {
   margin: 0;
@@ -1215,6 +1225,10 @@ html, body {
   overflow-y: scroll;
   height: 100%;
   padding-bottom: 40px; }
+  .menu_min--list::-webkit-scrollbar {
+    width: 5px; }
+  .menu_min--list::-webkit-scrollbar-thumb {
+    background-color: #ff4c3b; }
 
 .menu_min--item-label {
   text-transform: uppercase;
@@ -1228,7 +1242,9 @@ html, body {
   transition: 0.4s;
   padding: 0 10px;
   margin: 0;
-  position: relative; }
+  position: relative;
+  text-decoration: none;
+  color: #222222; }
 
 .menu_min--item-label i.hide_icon {
   display: none; }
@@ -1925,7 +1941,7 @@ html, body {
 
   .footer_theme--right-label {
     font-size: 15px;
-    border-bottom: 1px solid #c5bdbd;
+    border-bottom: 1px solid #ece8e8f8;
     padding: 10px 0; }
 
   .footer_theme {

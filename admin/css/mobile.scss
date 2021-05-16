@@ -1,0 +1,19 @@
+@media (min-width: 992px) and (max-width: 1200px){
+	.my_shopping--content-right-content{
+		.my_shopping--content__list{
+			.my_shopping--content__item{
+				padding: 20px 0 !important;
+				.my_shopping--content__label{
+					h5{
+						padding-left: 10px;
+					}
+				}
+				.my_shopping--content__body{
+					th{
+						padding: 5px 20px !important;
+					}
+				}
+			}
+		}
+	}
+}

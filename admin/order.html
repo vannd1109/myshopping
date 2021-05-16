@@ -8,34 +8,37 @@
 	<link rel="stylesheet" href="./css/admin.css">
 	<link rel="stylesheet" href="./css/category.css">
 	<link rel="stylesheet" href="./css/sale.css">
-	<!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
+	<link rel="stylesheet" href="./css/mobile.css">
 </head>
 <body>
 	<div class="my_shoping">
-		<div class="my_shopping--header">
+		<div class="my_shopping--header" id="my_shopping--header">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-2 my_shopping--logo">
+					<div class="col col-lg-2 my_shopping--logo" id="my_shopping--logo">
 						<a href="index.html">
 							<img src="./images/logo.png" alt="">
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-8 col-lg-10" id="my_shopping--header-right">
 						<div class="my_shopping--header-right">
 							<div class="my_shopping--bar">
-								<i class="fa fa-bars"></i>
+								<i class="fa fa-bars" id="my_shopping--bar-icon"></i>
+								<i class="fa fa-bars" id="my_shopping--show-side-bar"></i>
 							</div>
 							<!-- my_shopping--bar -->
-							<div class="my_shopping--intro">
+							<div class="my_shopping--intro" id="my_shopping--intro">
 								<div class="my_shopping--intro__search">
-									<div class="my_shopping--intro__search-icon">
-										<i class="fa fa-search"></i>
+									<div class="my_shopping--intro__search-body">
+										<div class="my_shopping--intro__search-icon">
+											<i class="fa fa-search"></i>
+										</div>
+										<!-- my_shopping--intro__search-icon -->
+										<div class="my_shopping--intro__search-input">
+											<input type="text" placeholder="Search...">
+										</div>
+										<!-- my_shopping--intro__search-input -->
 									</div>
-									<!-- my_shopping--intro__search-icon -->
-									<div class="my_shopping--intro__search-input">
-										<input type="text" placeholder="Search...">
-									</div>
-									<!-- my_shopping--intro__search-input -->
 								</div>
 								<!-- my_shopping--intro__search -->
 								<div class="my_shopping--intro__action">
@@ -59,6 +62,11 @@
 								<!-- my_shopping--intro__action -->
 							</div>
 							<!-- my_shopping--intro -->
+							<div class="my_shopping--intro-open" id="my_shopping--intro-open">
+								<span><i class="fa fa-circle"></i></span>
+								<span><i class="fa fa-circle"></i></span>
+								<span><i class="fa fa-circle"></i></span>
+							</div>
 						</div>
 						<!-- my_shopping--header-right -->
 					</div>
@@ -68,11 +76,10 @@
 			</div>
 		</div>
 		<!-- my_shopping--header -->
-		<div class="clear"></div>
-		<div class="my_shopping--content">
+		<div class="my_shopping--content" id="my_shopping--content">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-2 my_shopping--content-sidebar">
+				<div class="row row-cols-5">
+					<div class="col-2-5 my_shopping--content-sidebar" id="my_shopping--content-sidebar">
 						<div class="my_shopping--content-sidebar-content">
 							<div class="my_shopping--content-sidebar-user">
 								<div class="my_shopping--content-sidebar-user-img">
@@ -343,7 +350,7 @@
 						</div>
 						<!-- my_shopping--content-sidebar-content -->
 					</div>
-					<div class="col my_shopping--content-right">
+					<div class="col my_shopping--content-right" id="my_shopping--content-right">
 						<div class="row my_shopping--content-right-header">
 							<div class="col-6">
 								<div class="my_shopping--content-right-header-left">
@@ -393,6 +400,23 @@
 												</tr>
 											</thead>
 											<tbody>
+												<tr>
+													<td scope="row">#51240</td>
+													<td>
+														<div class="sale_order_img">
+															<img src="./images/sale/13.jpg" alt="">
+															<img src="./images/sale/16.jpg" alt="">
+															<img src="./images/sale/25.jpg" alt="">
+														</div>
+													</td>
+													<td>
+														<span class="badge bg-info">Cash On Delivery</span>
+													</td>
+													<td>Paypal</td>
+													<td class="category_status">Delivered</td>
+													<td>Dec 10,18</td>
+													<td>$54671</td>
+												</tr>
 												<tr>
 													<td scope="row">#51240</td>
 													<td>

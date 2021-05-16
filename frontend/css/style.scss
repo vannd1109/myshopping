@@ -10,6 +10,7 @@ $yelow_s: #ffa200;
 $ligthblue_s: #d0edff;
 $gray_s2: #f1e7e6;
 $brown_s: #bfbfbf;
+$border_color: #ece8e8f8;
 // Backgroud
 $gray_b: #f8f8f8;
 
@@ -75,46 +76,55 @@ html, body{
 				visibility: visible;
 				transform: translateY(0px);
 			}
-			.account_title{
-				margin: 0;
-				font-size: 13px;
-				.account_icon {
-					font-size: 12px;
-					margin: 0 5px;
-				}
-			}
-			.account_list {
-				list-style: none;
-				padding: 0px;
-				margin: 0;
-				opacity: 0;
-				visibility: hidden;
-				transform: translateY(30px);
-				transition: 0.4s;
-				border-top: none;
-				background-color: #f8f8f8;
-        position: relative;
-        z-index: 2;
-        .account_item {
-         line-height: 35px;
-         .account_link {
-          display: block;
-          text-decoration: none;
-          color: #999999;
-          padding-left: 20px;
-          &:hover {
-           color: $orange_s;
-         }
+      &:hover .account_icon:first-child{
+        color: $orange_s;
+      }
+      .account_title{
+        margin: 0;
+        font-size: 13px;
+        .account_icon {
+         font-size: 12px;
+         margin: 0 5px;
+         transition: 0.4s;
+       }
+     }
+     .account_list {
+      list-style: none;
+      padding: 0px;
+      margin: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(30px);
+      transition: 0.4s;
+      border-top: none;
+      background-color: #f8f8f8;
+      position: relative;
+      z-index: 2;
+      .account_item {
+       line-height: 35px;
+       .account_link {
+        display: block;
+        text-decoration: none;
+        color: #999999;
+        padding-left: 20px;
+        &:hover {
+         color: $orange_s;
        }
      }
    }
  }
- .like {
-   margin-right: 30px;
-   .like_icon {
-    font-size: 14px;
-    cursor: pointer;
-  }
+}
+.like {
+ padding: 0 30px;
+ cursor: pointer;
+ &:hover .like_icon{
+  color: #ff4c3b;
+}
+.like_icon {
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.4s;
+}
 }
 }
 }
@@ -166,14 +176,15 @@ html, body{
     position: static !important;
     .nav-link {
      text-transform: uppercase;
-     padding: 0 10px !important;
-     color: $black_s;
+     padding: 0 15px;
+     color: #222222;
      font-size: 15px;
-     transition:0.4s;
+     transition: 0.4s;
      position: relative;
      margin-bottom: 0;
      cursor: pointer;
      outline: none;
+     font-weight: 400;
      .nav_link--sub {
       position: absolute;
       top: 15px;
@@ -784,13 +795,15 @@ display: flex;
   	bottom: 0;	
   	opacity: 1;
   	visibility: hidden;
-  	transition: 0.4s
-  }
-
-  .new_product--icons .new_product--icon-item{
-  	color: $gray_s;
-    text-align: center;
-    margin-bottom: 5px;
+  	transition: 0.4s;
+    .new_product--icon-item {
+      color: $gray_s;
+      text-align: center;
+      margin-bottom: 5px;
+      i{
+        font-weight: 200;
+      }
+    }
   }
 
   .new_product--item:hover .new_product--icons{
@@ -949,8 +962,8 @@ display: flex;
 }
 
 .transport .transport_item:nth-child(2){
-	border-left: 1px solid $gray_s;
-	border-right: 1px solid $gray_s;
+	border-left: 1px solid $border_color;
+	border-right: 1px solid $border_color;
 }
 
 .transport_icon {
@@ -1002,8 +1015,8 @@ display: flex;
 }
 
 .transport_border{
-	border-top: 1px solid $gray_s;
-	border-bottom: 1px solid $gray_s;
+	border-top: 1px solid $border_color;
+	border-bottom: 1px solid $border_color;
 	padding: 40px 0;
 }
 
@@ -1246,7 +1259,7 @@ display: flex;
 	content: "";
 	top: 0;
 	left: 0;
-	border-top: 1px solid $gray_s;
+	border-top: 1px solid $border_color;
 	width: 97%;
 	margin: 0 12px;
 }
@@ -1257,7 +1270,7 @@ display: flex;
 }
 
 .confirm_left {
-	border-right: 1px solid $gray_s;
+	border-right: 1px solid $border_color;
 }
 
 .confirm_right {
@@ -1270,6 +1283,7 @@ display: flex;
 	font-size: 20px;
 	color: $black_s;
 	margin: 0;
+  margin-bottom: 5px;
 }
 
 .confirm_left--des {
@@ -1529,6 +1543,12 @@ display: flex;
   overflow-y: scroll;
   height: 100%;
   padding-bottom: 40px;
+  &::-webkit-scrollbar{
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: $orange_s;
+  }
 }
 
 .menu_min--item-label {
@@ -1544,6 +1564,8 @@ display: flex;
   padding: 0 10px;
   margin: 0;
   position: relative;
+  text-decoration: none;
+  color: $black_s;
 }
 
 .menu_min--item-label i.hide_icon {

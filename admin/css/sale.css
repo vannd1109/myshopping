@@ -2,15 +2,25 @@
   background: #e2e2e2; }
   .my_shopping--content__item .my_shopping--content__body .sale_order thead th {
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 20px; }
     .my_shopping--content__item .my_shopping--content__body .sale_order thead th:after {
       position: absolute;
       content: "\2191";
-      right: 0; }
+      right: 0px;
+      color: black;
+      font-size: 20px;
+      top: 50%;
+      transform: translateY(-50%); }
     .my_shopping--content__item .my_shopping--content__body .sale_order thead th:before {
       position: absolute;
       content: "\2193";
-      right: 20px; }
+      right: 8px;
+      color: #ff5258;
+      font-size: 20px;
+      top: 50%;
+      transform: translateY(-50%); }
 .my_shopping--content__item .my_shopping--content__body .sale_order tbody {
   vertical-align: middle; }
   .my_shopping--content__item .my_shopping--content__body .sale_order tbody tr {
@@ -21,5 +31,13 @@
       justify-content: space-around; }
       .my_shopping--content__item .my_shopping--content__body .sale_order tbody tr td .sale_order_img img {
         height: 40px; }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .my_shopping--content-right-content .my_shopping--content__list .my_shopping--content__item {
+    padding: 20px 0 !important; }
+    .my_shopping--content-right-content .my_shopping--content__list .my_shopping--content__item .my_shopping--content__label h5 {
+      padding-left: 10px; }
+    .my_shopping--content-right-content .my_shopping--content__list .my_shopping--content__item .my_shopping--content__body th {
+      padding: 5px 20px !important; } }
 
 /*# sourceMappingURL=sale.css.map */
