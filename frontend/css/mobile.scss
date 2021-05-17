@@ -1,3 +1,5 @@
+$border_color: #ece8e8f8;
+
 // top_header
 
 @media only screen and (max-width: 576px) {
@@ -402,6 +404,17 @@
 
 	.my_shopping--cart-counter{
 		margin: 30px 0 10px 10px;
+	}
+
+	// login
+	.shopping_content{
+		.shopping_content--right{
+			margin-top: 20px;
+		}
+	}
+
+	.my_shopping--form .my_shopping--form-body{
+		height: auto;
 	}
 }
 

@@ -2206,5 +2206,118 @@ display: flex;
 }
 
 
+// login
+.shopping_content {
+  padding: 40px 0;
+}
+
+.my_shopping--title{
+  margin-bottom: 20px;
+  h3 {
+    font-size: 23px;
+    font-weight: 500;
+  }
+} 
+
+.my_shopping--form {
+  border: 2px solid #e6dede;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 2px #ccc3c3;
+  .my_shopping--form-body {
+    padding: 20px 30px;
+    height: 400px;
+    .my_shopping--form-lable {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #312f2f;
+      margin-bottom: 0;
+    }
+    .my_shopping--form-des {
+      font-size: 14px;
+      line-height: 25px;
+      color: #7b7a7a;
+      margin-bottom: 0;
+      margin: 20px 0;
+    }
+    .my_shopping--form-item {
+      margin-bottom: 30px;
+      label {
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        margin-bottom: 5px;
+      }
+      input{
+        padding: 13px 20px;
+        margin: 0;
+        font-size: 16px;
+        outline: none;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.login-social-network {
+  margin-bottom: 20px;
+  .login-social-network-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    .login-social-network-item {
+      display: inline-block;
+      margin: 0 10px;
+      .login-social-network-link {
+        display: block;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: white;
+        font-size: 18px;
+        text-transform: capitalize;
+        transition: 0.4s;
+        &.login-social-network-link-fb{
+         background-color: #2e89ff;
+         border: 1px solid #2e89ff;
+       }
+        &.login-social-network-link-gg{
+         background-color: #dc1a1a;
+         border: 1px solid #dc1a1a;
+       }
+        &.login-social-network-link-tw{
+         background-color: #00b6f1;
+         border: 1px solid #00b6f1;
+       }
+       &:hover{
+        background-color: black;
+        color: #ff4c3b;
+      }
+    }
+  }
+}
+}
+
+.my_shopping--mirror {
+  width: 100%;
+  height: 1px;
+  background-color: $border_color;
+  margin: 25px 0;
+  position: relative;
+  &:after{
+    position: absolute;
+    content: "hoặc";
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #f9f9f9;
+    padding: 0 30px;
+    text-transform: capitalize;
+  }
+}
+
+
 
 @import "mobile";
