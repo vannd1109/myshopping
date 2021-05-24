@@ -348,12 +348,15 @@
         border-left: none; }
       .product_tabs--pagination .pagination .page-item .page-link {
         color: gray;
-        border: none; }
+        border: none;
+        transition: 0.4s; }
         .product_tabs--pagination .pagination .page-item .page-link:hover {
-          background-color: transparent; }
+          background-color: transparent;
+          color: #ff4c3b; }
     .product_tabs--pagination .pagination .page-item.active .page-link {
       background-color: transparent;
-      color: #ff4c3b; }
+      color: #ff4c3b;
+      font-weight: 500; }
   .product_tabs--pagination .product_tabs--pagination-label {
     margin-bottom: 0;
     text-align: right;

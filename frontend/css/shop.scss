@@ -441,7 +441,7 @@ $gray_b: #f8f8f8;
 		margin-bottom: 0;
 		.page-item{
 			padding: 10px;
-			border-left: 1px solid #d8d3d3 ;
+			border-left: 1px solid #d8d3d3;
 			&:last-child{
 				border-right: 1px solid #d8d3d3 ;
 			}
@@ -451,8 +451,10 @@ $gray_b: #f8f8f8;
 			.page-link{
 				color: gray;
 				border: none;
+				transition:0.4s;
 				&:hover{
 					background-color: transparent;
+					color: #ff4c3b;
 				}
 			}
 		}
@@ -460,6 +462,7 @@ $gray_b: #f8f8f8;
 			.page-link{
 				background-color: transparent;
 				color: #ff4c3b;
+				font-weight: 500;
 			}
 		}
 	}

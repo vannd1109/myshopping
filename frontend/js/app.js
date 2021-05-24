@@ -1,10 +1,20 @@
 
+let my_shopping = document.getElementById('my_shopping');
+
+my_shopping.classList.add("my_shopping_minus");
+
+
 document.addEventListener("DOMContentLoaded", function() {
 	var items = document.querySelectorAll('.menu_min--item-label'),
 	item_s = document.querySelectorAll('.menu_min-item-link'),
 	items_sidebar = document.querySelectorAll('.menu_sidebar--link'),
 	item_link = document.querySelectorAll('.menu_sidebar--item-link');
 
+	// my_shopping.classList.remove("my_shopping_minus");
+
+	setInterval(() => {
+		my_shopping.classList.toggle("my_shopping_minus");
+	}, 5000);
 	for(let i = 0; i < items.length ; i++)
 	{
 		items[i].addEventListener('click', function(){

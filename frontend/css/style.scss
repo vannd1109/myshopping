@@ -29,6 +29,29 @@ html, body{
   height: 100%;
 }
 
+.my_shopping.my_shopping_minus {
+  position: relative;
+  &:after{
+    position: fixed;
+    content: "";
+    height: 2px;
+    background-color: #ff4c3b;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    animation: my_shopping_minus 5s forwards;
+  }
+}
+
+@-webkit-keyframes my_shopping_minus{
+  0% { 
+    width: 0;
+  }
+  100% { 
+    width: 100%;
+  }
+}
+
 // top_header
 .top_header{
 	height: 50px;
@@ -152,6 +175,7 @@ html, body{
          cursor: pointer;
          position: relative;
          top: 5px;
+         display: inline-block;
        }
      }
      .menu_sub--logo {
@@ -2432,6 +2456,75 @@ html, body{
     }
   }
 }
+
+// blog-info
+.my_shopping--post-item{
+  margin-bottom: 30px;
+  .my_shopping--post-img{
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  .my_shopping--post-info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    .my_shopping--post-date{
+      h5{
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #ff4c3b;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+    .my_shopping--post-title{
+      margin: 5px 0;
+      a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 600;
+        color: #1f1e1e;
+        display: block;
+        line-height: 23px;
+      }
+    }
+    .my_shopping--post-social {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      .my_shopping--post-social-item {
+        font-size: 15px;
+        text-transform: capitalize;
+        color: #756f6f;
+        i{
+          font-size: 15px;
+          margin-right: 5px;
+        }
+        &.my_shopping--post-social-like {
+          border-left: 1px solid #e4e3e3;
+          display: block;
+          border-right: 1px solid #e4e3e3;
+          padding: 0 20px;
+        }
+      }
+    }
+    .my_shopping--post-des{
+      margin-top: 5px;
+      p{
+        font-size: 15px;
+        margin-bottom: 0;
+        color: gray;
+      }
+    }
+  }
+}
+
 
 
 

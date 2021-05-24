@@ -1,0 +1,40 @@
+.product_tabs--pagination {
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	width: 50%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	border: none;
+	.pagination {
+		justify-content: center;
+		.page-item {
+			padding: 0;
+			border: 1px solid #d8d3d3;
+			&:first-child {
+				border-left: 1px solid #d8d3d3;;
+			}
+			.page-link {
+				color: gray;
+				border: none;
+				display: block;
+				padding: 20px 30px;
+			}
+		}
+	}
+}
+
+@media(max-width: 1200px){
+	.my_shopping--post-info{
+		margin-top: 10px; 
+	}
+}
+@media(max-width: 768px){
+	.my_shopping--blog-right {
+		margin-top: 30px;
+	}
+	.product_tabs--pagination-number {
+		border-bottom: none !important;
+	}
+}

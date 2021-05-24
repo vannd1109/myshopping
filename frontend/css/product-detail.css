@@ -890,10 +890,12 @@
     .breadcrumb_shopping .breadcrumb_page--theme .breadcrumb {
       position: absolute;
       top: 10px;
-      left: 50%;
-      transform: translate(-50%);
+      left: 40%;
+      transform: translateX(-40%);
       height: 100px;
-      line-height: 100px; }
+      line-height: 100px;
+      display: flex;
+      flex-direction: column; }
 
   .my_shopping--product-choose {
     display: none; }
