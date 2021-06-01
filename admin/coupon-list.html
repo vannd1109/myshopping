@@ -1,0 +1,757 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>List Coupons</title>
+	<link href="../libs/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+	<link rel="stylesheet" href="./css/admin.css">
+	<link rel="stylesheet" href="./css/category.css">
+	<!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
+	<style>
+	.my_shopping--content__item .my_shopping--content__body table tbody tr td p {
+		top: 0; 
+	}
+	.choose_all{
+		font-size: 18px;
+		font-weight: 400;
+		border-right: 1px solid #e4dede;
+		padding-right: 10px;
+		float: left;
+		padding: 5px 10px;
+
+	}
+	.choose_all input{
+		width: 20px;
+		height: 20px;
+		cursor: pointer
+	}
+	.my_shopping--content__item .my_shopping--content__body table tbody tr td{
+		line-height: 60px;
+	}	
+	.my_shopping--content__item .my_shopping--content__body table tbody tr td input {
+		position: relative;
+		top: 20px;
+		width: 20px;
+		height: 20px;
+		border-radius: 0;
+	}
+	.my_shopping--content__item .my_shopping--content__body table{
+		border: 1px solid #e8e8e8;
+	}
+	.my_shopping--content__item .my_shopping--content__body table thead tr a {
+		font-size: 13px;
+		padding: 5px 20px;
+		float: left;
+		margin-left: 15px;
+	}
+	.showCheckd{
+		position: absolute;
+	}
+	.showCheckd:after{
+		position: absolute;
+		content: "\2713";
+		width: 20px;
+		height: 20px;
+		border: 1px solid #ff8084;
+		background-color: white;
+		color: #28a745;
+		left: 0;
+		text-align: center;
+		line-height: 20px;
+	}
+
+	.choose_item{
+		width: 12px;
+		height: 12px;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	.choose_item:before{
+		position: relative;
+		top: -2px;
+	}
+
+	.font{
+		position: relative;
+		top: 5px;
+	}
+	.font.font-warning{
+		color: #ffbc58;
+	}
+	.font.font-success{
+		color: #3c763d;
+	}
+	.font.font-secondary{
+		color: #a5a5a5;
+	}
+</style>
+</head>
+<body>
+	<div class="my_shoping">
+		<div class="my_shopping--header" id="my_shopping--header">
+			<div class="container-fluid">
+				<div class="row row-cols-5">
+					<div class="col-2-5 my_shopping--logo" id="my_shopping--logo">
+						<a href="index.html" class="my_shopping--logo-link">
+							<img src="./images/logo.png" alt="">
+						</a>
+					</div>
+					<div class="col" id="my_shopping--header-right">
+						<div class="my_shopping--header-right">
+							<div class="my_shopping--bar">
+								<i class="fa fa-bars" id="my_shopping--bar-icon"></i>
+								<i class="fa fa-bars" id="my_shopping--show-side-bar"></i>
+							</div>
+							<!-- my_shopping--bar -->
+							<div class="my_shopping--intro" id="my_shopping--intro">
+								<div class="my_shopping--intro__search">
+									<div class="my_shopping--intro__search-body">
+										<div class="my_shopping--intro__search-icon">
+											<i class="fa fa-search"></i>
+										</div>
+										<!-- my_shopping--intro__search-icon -->
+										<div class="my_shopping--intro__search-input">
+											<input type="text" placeholder="Search...">
+										</div>
+										<!-- my_shopping--intro__search-input -->
+									</div>
+								</div>
+								<!-- my_shopping--intro__search -->
+								<div class="my_shopping--intro__action">
+									<ul class="my_shopping--intro__action--list">
+										<li class="my_shopping--intro__action--item" id="action-fullscreen">
+											<i class="fa fa-compress-alt"></i>
+										</li>
+										<li class="my_shopping--intro__action--item my_shopping--intro__action--item-command">
+											<p class="my_shopping--language-active">en</p>
+											<ul class="my_shopping--language-list">
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<img src="./images/country/vn.svg" alt="">
+														</div>
+														<div class="language-name">
+															Việt Nam
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<img src="./images/country/eng.svg" alt="">
+														</div>
+														<div class="language-name">
+															English
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<img src="./images/country/jp.svg" alt="">
+														</div>
+														<div class="language-name">
+															Japan
+														</div>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="my_shopping--intro__action--item my_shopping--intro__action--item-command">
+											<div class="my_shopping--intro__action--item-top">
+												<i class="fa fa-bell my_shopping--bell"></i>
+												<div class="my_shopping--alert">
+													3
+												</div>
+											</div>
+											<div class="my_shopping--notification">
+												<div class="my_shopping--notification-content">
+													<div class="my_shopping--notification-header">
+														<p class="my_shopping--notification-label">
+															notification
+														</p>
+														<span class="my_shopping--notification-number">
+															3
+														</span>
+													</div>
+													<div class="my_shopping--notification-body">
+														<ul class="my_shopping--notification-list">
+															<li class="my_shopping--notification-item">
+																<div class="my_shopping--notification-item-icon">
+																	<i class="fa fa-shopping-bag"></i>
+																</div>
+																<div class="my_shopping--notification-item-content">
+																	<p class="my_shopping--notification-title">Your order ready for Ship...!</p>
+																	<p class="my_shopping--notification-des">
+																		Lorem ipsum dolor sit amet, consectetuer.
+																	</p>
+																</div>
+															</li>
+															<li class="my_shopping--notification-item">
+																<div class="my_shopping--notification-item-icon">
+																	<i class="fa fa-download text-success"></i>
+																</div>
+																<div class="my_shopping--notification-item-content">
+																	<p class="my_shopping--notification-title text-success">Your order ready for Ship...!</p>
+																	<p class="my_shopping--notification-des">
+																		Lorem ipsum dolor sit amet, consectetuer.
+																	</p>
+																</div>
+															</li>
+															<li class="my_shopping--notification-item">
+																<div class="my_shopping--notification-item-icon">
+																	<i class="fa fa-exclamation-circle txt-secondary"></i>
+																</div>
+																<div class="my_shopping--notification-item-content">
+																	<p class="my_shopping--notification-title txt-secondary">Your order ready for Ship...!</p>
+																	<p class="my_shopping--notification-des">
+																		Lorem ipsum dolor sit amet, consectetuer.
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="my_shopping--notification-footer">
+														<a href="" class="my_shopping--notification-link">
+															<strong>All</strong>notification
+														</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="my_shopping--intro__action--item my_shopping--intro__action--item-no-boder">
+											<div class="my_shopping--intro__action--item-top">
+												<i class="fa fa-comment-alt"></i>
+												<div class="my_shopping--alert">
+													3
+												</div>
+											</div>
+											<!-- <i class="fa fa-comment-alt"></i> -->
+										</li>
+										<li class="my_shopping--intro__action--item my_shopping--user my_shopping--intro__action--item-command">
+											<div class="my_shopping--avatar">
+												<img src="./images/user.png" alt="">
+											</div>
+											<ul class="my_shopping--language-list">
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-user"></i>
+														</div>
+														<div class="language-name">
+															edit profile
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="#" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-envelope"></i>
+														</div>
+														<div class="language-name">
+															inbox
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-lock"></i>
+														</div>
+														<div class="language-name">
+															lock screen
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-cog"></i>
+														</div>
+														<div class="language-name">
+															setting
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-sign-out"></i>
+														</div>
+														<div class="language-name">
+															logout
+														</div>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<!-- <div class="my_shopping--intro__action-full-screnn my_shopping--intro__action-general">
+										<i class="fa fa-compress-alt"></i>
+									</div>
+									<div class="my_shopping--intro__action-full-language my_shopping--intro__action-general">
+										en
+										<div class="my_shopping--intro__action-general-list">
+											a
+										</div>
+									</div>
+									<div class="my_shopping--intro__action-full-message my_shopping--intro__action-general">
+										<div class="my_shopping--bell">
+											<i class="fa fa-bell my_shopping--bell"></i>
+											<div class="my_shopping--alert">
+												3
+											</div>
+										</div>
+										<div class="my_shopping--comment">
+											<i class="fa fa-comment-alt"></i>
+										</div>
+									</div>
+									<div class="my_shopping--intro__action-full-info my_shopping--intro__action-general">
+										<div class="my_shopping--intro__action-full-info-img">
+											<img src="./images/user.png" alt="">
+										</div>
+										
+									</div> -->
+								</div>
+								<!-- my_shopping--intro__action -->
+							</div>
+							<!-- my_shopping--intro -->
+							<div class="my_shopping--intro-open" id="my_shopping--intro-open">
+								<span><i class="fa fa-circle"></i></span>
+								<span><i class="fa fa-circle"></i></span>
+								<span><i class="fa fa-circle"></i></span>
+							</div>
+						</div>
+						<!-- my_shopping--header-right -->
+					</div>
+				</div>
+
+				<!-- my_shopping--logo -->
+			</div>
+		</div>
+		<!-- my_shopping--header -->
+		<div class="clear"></div>
+		<div class="my_shopping--content" id="my_shopping--content">
+			<div class="container-fluid">
+				<div class="row row-cols-5">
+					<div class="col-2-5 my_shopping--content-sidebar" id="my_shopping--content-sidebar">
+						<div class="my_shopping--content-sidebar-content">
+							<div class="my_shopping--content-sidebar-user">
+								<div class="my_shopping--content-sidebar-user-img">
+									<img src="./images/user.png" alt="">
+								</div>
+								<div class="my_shopping--content-sidebar-user-name">
+									john
+								</div>
+								<div class="my_shopping--content-sidebar-user-position">
+									general manager
+								</div>
+							</div>
+							<ul class="my_shopping--content-sidebar-list">
+								<li class="my_shopping--content-sidebar-item">
+									<a href="index.html" class="my_shopping--content-sidebar-link my_shopping--content-sidebar-link-none">
+										<i class="fa fa-home"></i>
+										dashboard
+									</a>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-box"></i>
+										products
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												physical
+												<i class="fa fa-chevron-right"></i>
+											</p>
+											<ul class="my_shopping--content-sidebar-item-item-list">
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="#" class="my_shopping--content-sidebar-item-item-link">
+														category
+													</a>
+												</li>
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="category-sub.html" class="my_shopping--content-sidebar-item-item-link">
+														sub category
+													</a>
+												</li>
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
+														product list
+													</a>
+												</li>
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
+														product detail
+													</a>
+												</li>
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
+														add product
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												digital
+												<i class="fa fa-chevron-right"></i>
+											</p>
+											<ul class="my_shopping--content-sidebar-item-item-list">
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
+														category
+													</a>
+												</li>
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
+														sub category
+													</a>
+												</li>
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
+														product list
+													</a>
+												</li>
+												<li class="my_shopping--content-sidebar-item-item-item">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
+														add product
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-dollar-sign"></i>
+										sales
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												orders
+											</p>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												transactions
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-file"></i>
+										coupons
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												list coupons
+											</p>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												create coupons
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-clipboard"></i>
+										pages
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												list page
+											</p>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												create page
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<a href="" class="my_shopping--content-sidebar-link">
+										<i class="fa fa-camera"></i>
+										media
+									</a>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-bars"></i>
+										menus
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												menu lists
+											</p>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												create menu
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-user-plus"></i>
+										users
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												user lists
+											</p>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												create user
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-user-friends"></i>
+										vendors
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												vendor lists
+											</p>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												create vendor
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-globe-americas"></i>
+										localization
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												transactions
+											</p>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												currency rates
+											</p>
+										</li>
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												taxes
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<a href="" class="my_shopping--content-sidebar-link">
+										<i class="fa fa-file-chart-line"></i>
+										reports
+									</a>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<p class="my_shopping--content-sidebar-link">
+										<i class="fa fa-cog"></i>
+										settings
+										<i class="fa fa-chevron-right"></i>
+									</p>
+									<ul class="my_shopping--content-sidebar-item-list">
+										<li class="my_shopping--content-sidebar-item-item">
+											<p class="my_shopping--content-sidebar-item-link">
+												profile
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<a href="" class="my_shopping--content-sidebar-link">
+										<i class="fa fa-file-invoice"></i>
+										invoice
+									</a>
+								</li>
+								<li class="my_shopping--content-sidebar-item">
+									<a href="" class="my_shopping--content-sidebar-link">
+										<i class="fa fa-sign-in-alt"></i>
+										logout
+									</a>
+								</li>
+							</ul>
+							<!-- my_shopping--content-sidebar-user -->
+						</div>
+						<!-- my_shopping--content-sidebar-content -->
+					</div>
+					<div class="col my_shopping--content-right" id="my_shopping--content-right">
+						<div class="row my_shopping--content-right-header">
+							<div class="col-6">
+								<div class="my_shopping--content-right-header-left">
+									<h3>
+										list coupons
+										<small>multikart admin panel</small>
+									</h3>
+								</div>
+							</div>
+							<div class="col-6">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item">
+											<a href="#">
+												<i class="fa fa-home"></i>
+											</a>
+										</li>
+										<li class="breadcrumb-item parent" aria-current="page">
+											coupons
+										</li>
+										<li class="breadcrumb-item active" aria-current="page">
+											list coupons
+										</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+						<!-- my_shopping--content-right-header -->
+						<div class="my_shopping--content-right-content">
+							<div class="my_shopping--content__list">
+								<div class="my_shopping--content__item">
+									<div class="my_shopping--content__label">
+										<h5>list coupons</h5>
+									</div>
+									<!-- my_shopping--content__ -->
+									<div class="my_shopping--content__body">
+										<a href="#" class="btn btn btn-danger my_shopping__view__all">
+											add coupon
+										</a>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col" id="choose_all" style="width: 180px;">
+														<div class="choose_all">
+															<input type="checkbox" id="choose_alls">
+														</div>
+														
+														<a href="#" class="btn btn btn-danger text-uppercase">
+															<i class="fa fa-trash"></i>
+															delete
+														</a>
+													</th>
+													<th scope="col">Title</th>
+													<th scope="col">Code</th>
+													<th scope="col">Dissount</th>
+													<th scope="col">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="table-item">
+													<td>
+														<input type="checkbox">
+													</td>
+													<td><p>25% Off</p></td>
+													<td><p>Percent25</p></td>
+													<td class="category_status">25%</td>
+													<td><i class="choose_item fa fa-circle font font-warning"></i></td>
+												</tr>
+												<tr class="table-item">
+													<td>
+														<input type="checkbox">
+													</td>
+													<td><p>25% Off</p></td>
+													<td><p>Percent25</p></td>
+													<td class="category_status">25%</td>
+													<td><i class="choose_item fa fa-circle font font-success"></i></td>
+												</tr>
+												<tr class="table-item">
+													<td>
+														<input type="checkbox">
+													</td>
+													<td><p>25% Off</p></td>
+													<td><p>Percent25</p></td>
+													<td class="category_status">25%</td>
+													<td><i class="choose_item fa fa-circle font font-secondary"></i></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- my_shopping--content__body -->
+									<div class="my_shopping--content__pagination">
+										<nav aria-label="">
+											<ul class="pagination">
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<i class="fa fa-chevron-double-left"></i>
+													</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<i class="fa fa-chevron-left"></i>
+													</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item active"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<i class="fa fa-chevron-double-right"></i>
+													</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<i class="fa fa-chevron-right"></i>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- my_shopping--content-right-content -->
+						<footer class="my_shopping--footer">
+							<div class="my_shopping--footer__left">
+								<p>
+									Copyright 2019 © Multikart All rights reserved.
+								</p>
+							</div>
+							<!-- my_shopping--footer__left -->
+							<div class="my_shopping--footer__right">
+								<p>
+									Hand crafted & made with
+									<i class="fa fa-heart"></i>
+								</p>
+							</div>
+							<!-- my_shopping--footer__right -->
+						</footer>
+						<!-- my_shopping--footer -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/admin.js"></script>
+	<script src="./js/table.js"></script>
+</body>
+</html>

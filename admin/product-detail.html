@@ -14,53 +14,239 @@
 </head>
 <body>
 	<div class="my_shoping">
-		<div class="my_shopping--header">
+		<div class="my_shopping--header" id="my_shopping--header">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-2 my_shopping--logo">
-						<a href="index.html">
+				<div class="row row-cols-5">
+					<div class="col-2-5 my_shopping--logo" id="my_shopping--logo">
+						<a href="index.html" class="my_shopping--logo-link">
 							<img src="./images/logo.png" alt="">
 						</a>
 					</div>
-					<div class="col">
+					<div class="col" id="my_shopping--header-right">
 						<div class="my_shopping--header-right">
 							<div class="my_shopping--bar">
-								<i class="fa fa-bars"></i>
+								<i class="fa fa-bars" id="my_shopping--bar-icon"></i>
+								<i class="fa fa-bars" id="my_shopping--show-side-bar"></i>
 							</div>
 							<!-- my_shopping--bar -->
-							<div class="my_shopping--intro">
+							<div class="my_shopping--intro" id="my_shopping--intro">
 								<div class="my_shopping--intro__search">
-									<div class="my_shopping--intro__search-icon">
-										<i class="fa fa-search"></i>
+									<div class="my_shopping--intro__search-body">
+										<div class="my_shopping--intro__search-icon">
+											<i class="fa fa-search"></i>
+										</div>
+										<!-- my_shopping--intro__search-icon -->
+										<div class="my_shopping--intro__search-input">
+											<input type="text" placeholder="Search...">
+										</div>
+										<!-- my_shopping--intro__search-input -->
 									</div>
-									<!-- my_shopping--intro__search-icon -->
-									<div class="my_shopping--intro__search-input">
-										<input type="text" placeholder="Search...">
-									</div>
-									<!-- my_shopping--intro__search-input -->
 								</div>
 								<!-- my_shopping--intro__search -->
 								<div class="my_shopping--intro__action">
-									<div class="my_shopping--intro__action-full-screnn my_shopping--intro__action-general">
+									<ul class="my_shopping--intro__action--list">
+										<li class="my_shopping--intro__action--item" id="action-fullscreen">
+											<i class="fa fa-compress-alt"></i>
+										</li>
+										<li class="my_shopping--intro__action--item my_shopping--intro__action--item-command">
+											<p class="my_shopping--language-active">en</p>
+											<ul class="my_shopping--language-list">
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<img src="./images/country/vn.svg" alt="">
+														</div>
+														<div class="language-name">
+															Việt Nam
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<img src="./images/country/eng.svg" alt="">
+														</div>
+														<div class="language-name">
+															English
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<img src="./images/country/jp.svg" alt="">
+														</div>
+														<div class="language-name">
+															Japan
+														</div>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="my_shopping--intro__action--item my_shopping--intro__action--item-command">
+											<div class="my_shopping--intro__action--item-top">
+												<i class="fa fa-bell my_shopping--bell"></i>
+												<div class="my_shopping--alert">
+													3
+												</div>
+											</div>
+											<div class="my_shopping--notification">
+												<div class="my_shopping--notification-content">
+													<div class="my_shopping--notification-header">
+														<p class="my_shopping--notification-label">
+															notification
+														</p>
+														<span class="my_shopping--notification-number">
+															3
+														</span>
+													</div>
+													<div class="my_shopping--notification-body">
+														<ul class="my_shopping--notification-list">
+															<li class="my_shopping--notification-item">
+																<div class="my_shopping--notification-item-icon">
+																	<i class="fa fa-shopping-bag"></i>
+																</div>
+																<div class="my_shopping--notification-item-content">
+																	<p class="my_shopping--notification-title">Your order ready for Ship...!</p>
+																	<p class="my_shopping--notification-des">
+																		Lorem ipsum dolor sit amet, consectetuer.
+																	</p>
+																</div>
+															</li>
+															<li class="my_shopping--notification-item">
+																<div class="my_shopping--notification-item-icon">
+																	<i class="fa fa-download text-success"></i>
+																</div>
+																<div class="my_shopping--notification-item-content">
+																	<p class="my_shopping--notification-title text-success">Your order ready for Ship...!</p>
+																	<p class="my_shopping--notification-des">
+																		Lorem ipsum dolor sit amet, consectetuer.
+																	</p>
+																</div>
+															</li>
+															<li class="my_shopping--notification-item">
+																<div class="my_shopping--notification-item-icon">
+																	<i class="fa fa-exclamation-circle txt-secondary"></i>
+																</div>
+																<div class="my_shopping--notification-item-content">
+																	<p class="my_shopping--notification-title txt-secondary">Your order ready for Ship...!</p>
+																	<p class="my_shopping--notification-des">
+																		Lorem ipsum dolor sit amet, consectetuer.
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="my_shopping--notification-footer">
+														<a href="" class="my_shopping--notification-link">
+															<strong>All</strong>notification
+														</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="my_shopping--intro__action--item my_shopping--intro__action--item-no-boder">
+											<div class="my_shopping--intro__action--item-top">
+												<i class="fa fa-comment-alt"></i>
+												<div class="my_shopping--alert">
+													3
+												</div>
+											</div>
+											<!-- <i class="fa fa-comment-alt"></i> -->
+										</li>
+										<li class="my_shopping--intro__action--item my_shopping--user my_shopping--intro__action--item-command">
+											<div class="my_shopping--avatar">
+												<img src="./images/user.png" alt="">
+											</div>
+											<ul class="my_shopping--language-list">
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-user"></i>
+														</div>
+														<div class="language-name">
+															edit profile
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="#" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-envelope"></i>
+														</div>
+														<div class="language-name">
+															inbox
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-lock"></i>
+														</div>
+														<div class="language-name">
+															lock screen
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-cog"></i>
+														</div>
+														<div class="language-name">
+															setting
+														</div>
+													</a>
+												</li>
+												<li class="my_shopping--language-item">
+													<a href="" class="my_shopping--language-link">
+														<div class="language-flag">
+															<i class="fa fa-sign-out"></i>
+														</div>
+														<div class="language-name">
+															logout
+														</div>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<!-- <div class="my_shopping--intro__action-full-screnn my_shopping--intro__action-general">
 										<i class="fa fa-compress-alt"></i>
 									</div>
 									<div class="my_shopping--intro__action-full-language my_shopping--intro__action-general">
 										en
+										<div class="my_shopping--intro__action-general-list">
+											a
+										</div>
 									</div>
 									<div class="my_shopping--intro__action-full-message my_shopping--intro__action-general">
-										<i class="fa fa-bell"></i>
-										<i class="fa fa-comment-alt"></i>
+										<div class="my_shopping--bell">
+											<i class="fa fa-bell my_shopping--bell"></i>
+											<div class="my_shopping--alert">
+												3
+											</div>
+										</div>
+										<div class="my_shopping--comment">
+											<i class="fa fa-comment-alt"></i>
+										</div>
 									</div>
 									<div class="my_shopping--intro__action-full-info my_shopping--intro__action-general">
 										<div class="my_shopping--intro__action-full-info-img">
 											<img src="./images/user.png" alt="">
 										</div>
 										
-									</div>
+									</div> -->
 								</div>
 								<!-- my_shopping--intro__action -->
 							</div>
 							<!-- my_shopping--intro -->
+							<div class="my_shopping--intro-open" id="my_shopping--intro-open">
+								<span><i class="fa fa-circle"></i></span>
+								<span><i class="fa fa-circle"></i></span>
+								<span><i class="fa fa-circle"></i></span>
+							</div>
 						</div>
 						<!-- my_shopping--header-right -->
 					</div>
@@ -70,11 +256,10 @@
 			</div>
 		</div>
 		<!-- my_shopping--header -->
-		<div class="clear"></div>
-		<div class="my_shopping--content">
+		<div class="my_shopping--content" id="my_shopping--content">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-2 my_shopping--content-sidebar">
+				<div class="row row-cols-5">
+					<div class="col-2-5 my_shopping--content-sidebar" id="my_shopping--content-sidebar">
 						<div class="my_shopping--content-sidebar-content">
 							<div class="my_shopping--content-sidebar-user">
 								<div class="my_shopping--content-sidebar-user-img">
@@ -345,7 +530,7 @@
 						</div>
 						<!-- my_shopping--content-sidebar-content -->
 					</div>
-					<div class="col my_shopping--content-right">
+					<div class="col my_shopping--content-right" id="my_shopping--content-right">
 						<div class="row my_shopping--content-right-header">
 							<div class="col-6">
 								<div class="my_shopping--content-right-header-left">
@@ -545,10 +730,10 @@
 		var galleryTop = new Swiper('.gallery-top', {
 			spaceBetween: 10,
 			loop: true,
-		    loopedSlides: 5,
-		    thumbs: {
-		    	swiper: galleryThumbs,
-		    },
+			loopedSlides: 5,
+			thumbs: {
+				swiper: galleryThumbs,
+			},
 		});
 	</script>
 </body>

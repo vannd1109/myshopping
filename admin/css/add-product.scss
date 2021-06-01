@@ -1,5 +1,20 @@
 .my_shopping--product__list{
 	.my_shopping--product__item{
+		background-color: white;
+		border-radius: 10px;
+		margin-bottom: 30px;
+		.my_shopping--content__label{
+			padding: 20px 30px;
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid #eae9e9;
+			h5{
+				font-size: 20px;
+				text-transform: capitalize;
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+		}
 		.my_shopping--product__body{
 			.my_shopping--product__img{
 				img {

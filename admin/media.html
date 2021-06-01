@@ -1,16 +1,94 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Admin</title>
+	<title>Media</title>
 	<link href="../libs/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 	<link rel="stylesheet" href="./css/admin.css">
+	<link rel="stylesheet" href="./css/category.css">
 	<!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
+	<style>
+	.my_shopping--content__item .my_shopping--content__body table tbody tr td p {
+		top: 0; 
+	}
+	.choose_all{
+		font-size: 18px;
+		font-weight: 400;
+		border-right: 1px solid #e4dede;
+		padding-right: 10px;
+		float: left;
+		padding: 5px 10px;
+
+	}
+	.choose_all input{
+		width: 20px;
+		height: 20px;
+		cursor: pointer
+	}
+	.my_shopping--content__item .my_shopping--content__body table tbody tr td{
+		line-height: 60px;
+	}	
+	.my_shopping--content__item .my_shopping--content__body table tbody tr td input {
+		position: relative;
+		top: 20px;
+		width: 20px;
+		height: 20px;
+		border-radius: 0;
+	}
+	.my_shopping--content__item .my_shopping--content__body table{
+		border: 1px solid #e8e8e8;
+	}
+	.my_shopping--content__item .my_shopping--content__body table thead tr a {
+		font-size: 13px;
+		padding: 5px 20px;
+		float: left;
+		margin-left: 15px;
+	}
+	.showCheckd{
+		position: absolute;
+	}
+	.showCheckd:after{
+		position: absolute;
+		content: "\2713";
+		width: 20px;
+		height: 20px;
+		border: 1px solid #ff8084;
+		background-color: white;
+		color: #28a745;
+		left: 0;
+		text-align: center;
+		line-height: 20px;
+	}
+
+	.choose_item{
+		width: 12px;
+		height: 12px;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	.choose_item:before{
+		position: relative;
+		top: -2px;
+	}
+
+	.font{
+		position: relative;
+		top: 5px;
+	}
+	.font.font-warning{
+		color: #ffbc58;
+	}
+	.font.font-success{
+		color: #3c763d;
+	}
+	.font.font-secondary{
+		color: #a5a5a5;
+	}
+</style>
 </head>
 <body>
-	<div class="my_shoping" id="my_shopping">
+	<div class="my_shoping">
 		<div class="my_shopping--header" id="my_shopping--header">
 			<div class="container-fluid">
 				<div class="row row-cols-5">
@@ -253,6 +331,7 @@
 			</div>
 		</div>
 		<!-- my_shopping--header -->
+		<div class="clear"></div>
 		<div class="my_shopping--content" id="my_shopping--content">
 			<div class="container-fluid">
 				<div class="row row-cols-5">
@@ -271,7 +350,7 @@
 							</div>
 							<ul class="my_shopping--content-sidebar-list">
 								<li class="my_shopping--content-sidebar-item">
-									<a href="" class="my_shopping--content-sidebar-link my_shopping--content-sidebar-link-none">
+									<a href="index.html" class="my_shopping--content-sidebar-link my_shopping--content-sidebar-link-none">
 										<i class="fa fa-home"></i>
 										dashboard
 									</a>
@@ -290,7 +369,7 @@
 											</p>
 											<ul class="my_shopping--content-sidebar-item-item-list">
 												<li class="my_shopping--content-sidebar-item-item-item">
-													<a href="category.html" class="my_shopping--content-sidebar-item-item-link">
+													<a href="#" class="my_shopping--content-sidebar-item-item-link">
 														category
 													</a>
 												</li>
@@ -300,17 +379,17 @@
 													</a>
 												</li>
 												<li class="my_shopping--content-sidebar-item-item-item">
-													<a href="product-list.html" class="my_shopping--content-sidebar-item-item-link">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
 														product list
 													</a>
 												</li>
 												<li class="my_shopping--content-sidebar-item-item-item">
-													<a href="product-detail.html" class="my_shopping--content-sidebar-item-item-link">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
 														product detail
 													</a>
 												</li>
 												<li class="my_shopping--content-sidebar-item-item-item">
-													<a href="add-product.html" class="my_shopping--content-sidebar-item-item-link">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
 														add product
 													</a>
 												</li>
@@ -323,22 +402,22 @@
 											</p>
 											<ul class="my_shopping--content-sidebar-item-item-list">
 												<li class="my_shopping--content-sidebar-item-item-item">
-													<a href="category-digitalsub.html" class="my_shopping--content-sidebar-item-item-link">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
 														category
 													</a>
 												</li>
 												<li class="my_shopping--content-sidebar-item-item-item">
-													<a href="category-digitalsub.html" class="my_shopping--content-sidebar-item-item-link">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
 														sub category
 													</a>
 												</li>
 												<li class="my_shopping--content-sidebar-item-item-item">
-													<a href="product-listdigital.html" class="my_shopping--content-sidebar-item-item-link">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
 														product list
 													</a>
 												</li>
 												<li class="my_shopping--content-sidebar-item-item-item">
-													<a href="add-digital-product.html" class="my_shopping--content-sidebar-item-item-link">
+													<a href="" class="my_shopping--content-sidebar-item-item-link">
 														add product
 													</a>
 												</li>
@@ -354,14 +433,14 @@
 									</p>
 									<ul class="my_shopping--content-sidebar-item-list">
 										<li class="my_shopping--content-sidebar-item-item">
-											<a href="order.html" class="my_shopping--content-sidebar-item-link">
+											<p class="my_shopping--content-sidebar-item-link">
 												orders
-											</a>
+											</p>
 										</li>
 										<li class="my_shopping--content-sidebar-item-item">
-											<a href="transactions.html" class="my_shopping--content-sidebar-item-link">
+											<p class="my_shopping--content-sidebar-item-link">
 												transactions
-											</a>
+											</p>
 										</li>
 									</ul>
 								</li>
@@ -373,14 +452,14 @@
 									</p>
 									<ul class="my_shopping--content-sidebar-item-list">
 										<li class="my_shopping--content-sidebar-item-item">
-											<a href="coupon-list.html" class="my_shopping--content-sidebar-item-link">
+											<p class="my_shopping--content-sidebar-item-link">
 												list coupons
-											</a>
+											</p>
 										</li>
 										<li class="my_shopping--content-sidebar-item-item">
-											<a href="coupon-create.html" class="my_shopping--content-sidebar-item-link">
+											<p class="my_shopping--content-sidebar-item-link">
 												create coupons
-											</a>
+											</p>
 										</li>
 									</ul>
 								</li>
@@ -392,9 +471,9 @@
 									</p>
 									<ul class="my_shopping--content-sidebar-item-list">
 										<li class="my_shopping--content-sidebar-item-item">
-											<a href="page-list.html" class="my_shopping--content-sidebar-item-link">
+											<p class="my_shopping--content-sidebar-item-link">
 												list page
-											</a>
+											</p>
 										</li>
 										<li class="my_shopping--content-sidebar-item-item">
 											<p class="my_shopping--content-sidebar-item-link">
@@ -404,7 +483,7 @@
 									</ul>
 								</li>
 								<li class="my_shopping--content-sidebar-item">
-									<a href="media.html" class="my_shopping--content-sidebar-link">
+									<a href="" class="my_shopping--content-sidebar-link">
 										<i class="fa fa-camera"></i>
 										media
 									</a>
@@ -532,7 +611,7 @@
 							<div class="col-6">
 								<div class="my_shopping--content-right-header-left">
 									<h3>
-										dashboard
+										media
 										<small>multikart admin panel</small>
 									</h3>
 								</div>
@@ -545,327 +624,121 @@
 												<i class="fa fa-home"></i>
 											</a>
 										</li>
-										<li class="breadcrumb-item active" aria-current="page">
-											dashboard
+										<li class="breadcrumb-item parent" aria-current="page">
+											media
 										</li>
 									</ol>
 								</nav>
 							</div>
 						</div>
 						<!-- my_shopping--content-right-header -->
-						<div class="my_shopping--total">
-							<div class="row">
-								<div class="col-sm-12 col-md-6">
-									<div class="my_shopping--total-item my_shopping--total-item-earning">
-										<div class="my_shopping-total-icon">
-											<i class="fa fa-location-arrow"></i>
-										</div>
-										<div class="my_shopping-total-money">
-											<h4 class="my_shopping-total-money-title">
-												earnings
-											</h4>
-											<h3 class="my_shopping-total-price">
-												$ <strong>6659</strong>
-												<small>this month</small>
-											</h3>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-12 col-md-6">
-									<div class="my_shopping--total-item my_shopping--total-item-product">
-										<div class="my_shopping-total-icon">
-											<i class="fa fa-box"></i>
-										</div>
-										<div class="my_shopping-total-money">
-											<h4 class="my_shopping-total-money-title">
-												products
-											</h4>
-											<h3 class="my_shopping-total-price">
-												$ <strong>9856</strong>
-												<small>this month</small>
-											</h3>
-										</div>
-									</div>
-								</div>
-								<!-- col-6 -->
-								<div class="col-sm-12 col-md-6">
-									<div class="my_shopping--total-item">
-										<div class="my_shopping-total-icon">
-											<i class="fa fa-comment-alt"></i>
-										</div>
-										<div class="my_shopping-total-money">
-											<h4 class="my_shopping-total-money-title">
-												messages
-											</h4>
-											<h3 class="my_shopping-total-price">
-												$ <strong>893</strong>
-												<small>this month</small>
-											</h3>
-										</div>
-									</div>
-								</div>
-								<!-- col-6 -->
-								<div class="col-sm-12 col-md-6">
-									<div class="my_shopping--total-item my_shopping--total-item-vendor">
-										<div class="my_shopping-total-icon">
-											<i class="fa fa-location-arrow"></i>
-										</div>
-										<div class="my_shopping-total-money">
-											<h4 class="my_shopping-total-money-title">
-												new vendors
-											</h4>
-											<h3 class="my_shopping-total-price">
-												$ <strong>45631</strong>
-												<small>this month</small>
-											</h3>
-										</div>
-									</div>
-								</div>
-								<!-- col-6 -->
-							</div>
-						</div>
-						<!-- my_shopping--total -->
 						<div class="my_shopping--content-right-content">
 							<div class="my_shopping--content__list">
 								<div class="my_shopping--content__item">
 									<div class="my_shopping--content__label">
-										<h5>market value</h5>
-										<div class="my_shopping--content__label--action">
-											<i class="my_shopping--content__label--action-open fa fa-chevron-left"></i>
-											<i class="my_shopping--content__label--action-close fa fa-chevron-right"></i>
-											<i class="fa fa-code"></i>
-											<i class="fa fa-compress-alt"></i>
-											<i class="fa fa-minus my_shopping--action-hidden"></i>
-											<i class="fa fa-plus my_shopping--action-show"></i>
-											<i class="fa fa-repeat-alt"></i>
-											<i class="fa fa-times my_shopping--action-delete"></i>
-										</div>
+										<h5>dropzone media</h5>
 									</div>
 									<!-- my_shopping--content__ -->
 									<div class="my_shopping--content__body">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dignissimos consequatur aliquam quidem, nulla. Dicta dolorum obcaecati id quae a sit, quas, excepturi temporibus nisi architecto ipsam ab facere quisquam.
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dignissimos consequatur aliquam quidem, nulla. Dicta dolorum obcaecati id quae a sit, quas, excepturi temporibus nisi architecto ipsam ab facere quisquam.
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dignissimos consequatur aliquam quidem, nulla. Dicta dolorum obcaecati id quae a sit, quas, excepturi temporibus nisi architecto ipsam ab facere quisquam.
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dignissimos consequatur aliquam quidem, nulla. Dicta dolorum obcaecati id quae a sit, quas, excepturi temporibus nisi architecto ipsam ab facere quisquam.
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dignissimos consequatur aliquam quidem, nulla. Dicta dolorum obcaecati id quae a sit, quas, excepturi temporibus nisi architecto ipsam ab facere quisquam.
 									</div>
-									<!-- my_shopping--content__body -->
 								</div>
 								<!-- my_shopping--content__item -->
 								<div class="my_shopping--content__item">
 									<div class="my_shopping--content__label">
-										<h5>latest orders</h5>
-										<div class="my_shopping--content__label--action">
-											<i class="my_shopping--content__label--action-open fa fa-chevron-left"></i>
-											<i class="my_shopping--content__label--action-close fa fa-chevron-right"></i>
-											<i class="fa fa-code"></i>
-											<i class="fa fa-compress-alt"></i>
-											<i class="fa fa-minus my_shopping--action-hidden"></i>
-											<i class="fa fa-plus my_shopping--action-show"></i>
-											<i class="fa fa-repeat-alt"></i>
-											<i class="fa fa-times my_shopping--action-delete "></i>
-										</div>
+										<h5>media file list</h5>
 									</div>
 									<!-- my_shopping--content__ -->
 									<div class="my_shopping--content__body">
+										<a href="#" class="btn btn btn-danger my_shopping__view__all">
+											add media
+										</a>
 										<table class="table">
 											<thead>
 												<tr>
-													<th scope="col">Order ID</th>
-													<th scope="col">OrderTotal</th>
-													<th scope="col">Payment Mothod</th>
-													<th scope="col">Status</th>
+													<th scope="col" id="choose_all" style="width: 180px;">
+														<div class="choose_all">
+															<input type="checkbox" id="choose_alls">
+														</div>
+														
+														<a href="#" class="btn btn btn-danger text-uppercase">
+															<i class="fa fa-trash"></i>
+															delete
+														</a>
+													</th>
+													<th scope="col">Image</th>
+													<th scope="col">File Name</th>
+													<th scope="col">Url</th>
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
-													<th scope="row">1</th>
-													<td>$120.00</td>
-													<td>Bank Transfers</td>
-													<td>On Way</td>
+												<tr class="table-item">
+													<td>
+														<input type="checkbox">
+													</td>
+													<td><img src="./images/sp_1.jpg" alt=""></td>
+													<td>Honor_Mobile.jpg</Honor></td>
+													<td class="category_status">http://www.assets/images/product/product/13.jpg</td>
 												</tr>
-												<tr>
-													<th scope="row">2</th>
-													<td>$90.00</td>
-													<td>Ewallets</td>
-													<td>Delivered</td>
+												<tr class="table-item">
+													<td>
+														<input type="checkbox">
+													</td>
+													<td><img src="./images/sp_2.jpg" alt=""></td>
+													<td>Honor_Mobile.jpg</Honor></td>
+													<td class="category_status">http://www.assets/images/product/product/13.jpg</td>
 												</tr>
-												<tr>
-													<th scope="row">3</th>
-													<td>@240.00</td>
-													<td>Cash</td>
-													<td>Delivered</td>
+												<tr class="table-item">
+													<td>
+														<input type="checkbox">
+													</td>
+													<td><img src="./images/sp_3.jpg" alt=""></td>
+													<td>Honor_Mobile.jpg</Honor></td>
+													<td class="category_status">http://www.assets/images/product/product/13.jpg</td>
 												</tr>
-												<tr>
-													<th scope="row">4</th>
-													<td>$120.00</td>
-													<td>Direct Deposit</td>
-													<td>$6523</td>
-												</tr>
-												<tr>
-													<th scope="row">5</th>
-													<td>$50.00</td>
-													<td>Bank Transfers</td>
-													<td>Delivered</td>
-												</tr>
-											</tbody>
-										</table>
-										<a href="#" class="btn btn btn-danger my_shopping__view__all">view all orders</a>
-									</div>
-									<!-- my_shopping--content__body -->
-								</div>
-								<!-- my_shopping--content__item -->
-								<div class="my_shopping--content__item">
-									<div class="my_shopping--content__label">
-										<h5>buy / sell</h5>
-										<div class="my_shopping--content__label--action">
-											<i class="my_shopping--content__label--action-open fa fa-chevron-left"></i>
-											<i class="my_shopping--content__label--action-close fa fa-chevron-right"></i>
-											<i class="fa fa-code"></i>
-											<i class="fa fa-compress-alt"></i>
-											<i class="fa fa-minus my_shopping--action-hidden"></i>
-											<i class="fa fa-plus my_shopping--action-show"></i>
-											<i class="fa fa-repeat-alt"></i>
-											<i class="fa fa-times my_shopping--action-delete"></i>
-										</div>
-									</div>
-									<!-- my_shopping--content__ -->
-									<div class="my_shopping--content__body">
-										Lorem ipsum dolor sit amet consectetur adipisicing, elit. A, magnam consequatur amet unde dignissimos velit mollitia facilis dolor et, repudiandae animi magni blanditiis. Illum laboriosam hic, fugit atque doloribus dignissimos?
-										Lorem ipsum dolor sit amet consectetur adipisicing, elit. A, magnam consequatur amet unde dignissimos velit mollitia facilis dolor et, repudiandae animi magni blanditiis. Illum laboriosam hic, fugit atque doloribus dignissimos?
-										Lorem ipsum dolor sit amet consectetur adipisicing, elit. A, magnam consequatur amet unde dignissimos velit mollitia facilis dolor et, repudiandae animi magni blanditiis. Illum laboriosam hic, fugit atque doloribus dignissimos?
-										Lorem ipsum dolor sit amet consectetur adipisicing, elit. A, magnam consequatur amet unde dignissimos velit mollitia facilis dolor et, repudiandae animi magni blanditiis. Illum laboriosam hic, fugit atque doloribus dignissimos?
-										Lorem ipsum dolor sit amet consectetur adipisicing, elit. A, magnam consequatur amet unde dignissimos velit mollitia facilis dolor et, repudiandae animi magni blanditiis. Illum laboriosam hic, fugit atque doloribus dignissimos?
-										Lorem ipsum dolor sit amet consectetur adipisicing, elit. A, magnam consequatur amet unde dignissimos velit mollitia facilis dolor et, repudiandae animi magni blanditiis. Illum laboriosam hic, fugit atque doloribus dignissimos?
-									</div>
-									<!-- my_shopping--content__body -->
-								</div>
-								<!-- my_shopping--content__item -->
-								<div class="my_shopping--content__item">
-									<div class="my_shopping--content__label">
-										<h5>goods return</h5>
-										<div class="my_shopping--content__label--action">
-											<i class="my_shopping--content__label--action-open fa fa-chevron-left"></i>
-											<i class="my_shopping--content__label--action-close fa fa-chevron-right"></i>
-											<i class="fa fa-code"></i>
-											<i class="fa fa-compress-alt"></i>
-											<i class="fa fa-minus my_shopping--action-hidden"></i>
-											<i class="fa fa-plus my_shopping--action-show"></i>
-											<i class="fa fa-repeat-alt"></i>
-											<i class="fa fa-times my_shopping--action-delete"></i>
-										</div>
-									</div>
-									<!-- my_shopping--content__ -->
-									<div class="my_shopping--content__body">
-										<table class="table">
-											<thead>
-												<tr>
-													<th scope="col">Details</th>
-													<th scope="col">Quantity</th>
-													<th scope="col">Status</th>
-													<th scope="col">Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row">Simply dummy text of the printing</th>
-													<td>1</td>
-													<td>Pending</td>
-													<td>$6523</td>
-												</tr>
-												<tr>
-													<th scope="row">Long established</th>
-													<td>5</td>
-													<td>Cancle</td>
-													<td>$6523</td>
-												</tr>
-												<tr>
-													<th scope="row">sometimes by accident</th>
-													<td>10</td>
-													<td>Cancle</td>
-													<td>$6523</td>
-												</tr>
-												<tr>
-													<th scope="row">Classical Latin literature</th>
-													<td>9</td>
-													<td>Return</td>
-													<td>$6523</td>
-												</tr>
-												<tr>
-													<th scope="row">keep the site on the Internet</th>
-													<td>8</td>
-													<td>Pending</td>
-													<td>$6523</td>
-												</tr>
-												<tr>
-													<th scope="row">Molestiae consequatur</th>
-													<td>3</td>
-													<td>Cancle</td>
-													<td>$6523</td>
-												</tr>
-												<tr>
-													<th scope="row">Pain can procure</th>
-													<td>8</td>
-													<td>Return</td>
-													<td>$6523</td>
+												<tr class="table-item">
+													<td>
+														<input type="checkbox">
+													</td>
+													<td><img src="./images/sp_4.jpg" alt=""></td>
+													<td>Honor_Mobile.jpg</Honor></td>
+													<td class="category_status">http://www.assets/images/product/product/13.jpg</td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
 									<!-- my_shopping--content__body -->
+									<div class="my_shopping--content__pagination">
+										<nav aria-label="">
+											<ul class="pagination">
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<i class="fa fa-chevron-double-left"></i>
+													</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<i class="fa fa-chevron-left"></i>
+													</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item active"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<i class="fa fa-chevron-double-right"></i>
+													</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link" href="#" aria-label="Previous">
+														<i class="fa fa-chevron-right"></i>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
 								</div>
 								<!-- my_shopping--content__item -->
-								<div class="my_shopping--content__item">
-									<div class="my_shopping--content__label">
-										<h5>employees status</h5>
-										<div class="my_shopping--content__label--action">
-											<i class="my_shopping--content__label--action-open fa fa-chevron-left"></i>
-											<i class="my_shopping--content__label--action-close fa fa-chevron-right"></i>
-											<i class="fa fa-code"></i>
-											<i class="fa fa-compress-alt"></i>
-											<i class="fa fa-minus my_shopping--action-hidden"></i>
-											<i class="fa fa-plus my_shopping--action-show"></i>
-											<i class="fa fa-repeat-alt"></i>
-											<i class="fa fa-times my_shopping--action-delete"></i>
-										</div>
-									</div>
-									<!-- my_shopping--content__ -->
-									<div class="my_shopping--content__body">
-										Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nostrum, voluptas, rerum cupiditate mollitia ullam aspernatur eum? Ratione perspiciatis eos veritatis, ut ad repudiandae in ipsam debitis beatae dolor quisquam. Numquam!
-										Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nostrum, voluptas, rerum cupiditate mollitia ullam aspernatur eum? Ratione perspiciatis eos veritatis, ut ad repudiandae in ipsam debitis beatae dolor quisquam. Numquam!
-										Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nostrum, voluptas, rerum cupiditate mollitia ullam aspernatur eum? Ratione perspiciatis eos veritatis, ut ad repudiandae in ipsam debitis beatae dolor quisquam. Numquam!
-										Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nostrum, voluptas, rerum cupiditate mollitia ullam aspernatur eum? Ratione perspiciatis eos veritatis, ut ad repudiandae in ipsam debitis beatae dolor quisquam. Numquam!
-										Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nostrum, voluptas, rerum cupiditate mollitia ullam aspernatur eum? Ratione perspiciatis eos veritatis, ut ad repudiandae in ipsam debitis beatae dolor quisquam. Numquam!
-									</div>
-									<!-- my_shopping--content__body -->
-								</div>
-								<!-- my_shopping--content__item -->
-								<div class="my_shopping--content__item">
-									<div class="my_shopping--content__label">
-										<h5>sales status</h5>
-										<div class="my_shopping--content__label--action">
-											<i class="my_shopping--content__label--action-open fa fa-chevron-left"></i>
-											<i class="my_shopping--content__label--action-close fa fa-chevron-right"></i>
-											<i class="fa fa-code"></i>
-											<i class="fa fa-compress-alt"></i>
-											<i class="fa fa-minus my_shopping--action-hidden"></i>
-											<i class="fa fa-plus my_shopping--action-show"></i>
-											<i class="fa fa-repeat-alt"></i>
-											<i class="fa fa-times my_shopping--action-delete"></i>
-										</div>
-									</div>
-									<!-- my_shopping--content__ -->
-									<div class="my_shopping--content__body">
-										Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Sunt, eaque modi illum iste animi ab consectetur similique soluta! Voluptatem labore sit quam voluptas eligendi aliquid vel ipsa assumenda dolore dolor?
-										Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Sunt, eaque modi illum iste animi ab consectetur similique soluta! Voluptatem labore sit quam voluptas eligendi aliquid vel ipsa assumenda dolore dolor?
-										Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Sunt, eaque modi illum iste animi ab consectetur similique soluta! Voluptatem labore sit quam voluptas eligendi aliquid vel ipsa assumenda dolore dolor?
-										Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Sunt, eaque modi illum iste animi ab consectetur similique soluta! Voluptatem labore sit quam voluptas eligendi aliquid vel ipsa assumenda dolore dolor?
-										Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Sunt, eaque modi illum iste animi ab consectetur similique soluta! Voluptatem labore sit quam voluptas eligendi aliquid vel ipsa assumenda dolore dolor?
-										Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Sunt, eaque modi illum iste animi ab consectetur similique soluta! Voluptatem labore sit quam voluptas eligendi aliquid vel ipsa assumenda dolore dolor?
-									</div>
-									<!-- my_shopping--content__body -->
-								</div>
-								<!-- my_shopping--content__item -->
+								
 							</div>
 						</div>
 						<!-- my_shopping--content-right-content -->
@@ -891,5 +764,6 @@
 		</div>
 	</div>
 	<script src="./js/admin.js"></script>
+	<script src="./js/table.js"></script>
 </body>
 </html>

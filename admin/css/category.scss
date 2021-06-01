@@ -1,7 +1,7 @@
 .my_shopping--content__item {
 	.my_shopping__view__all{
 		float: right;
-		margin: 50px 0 28px 0;
+		margin: 10px 0;
 	}
 
 	.my_shopping--content__body {
@@ -24,6 +24,11 @@
 			tbody{
 				tr{
 					text-align: center;
+					cursor: pointer;
+					transition: 0.4s;
+					&:hover{
+						background-color: #e6e6e6;
+					}
 					td{
 						p{
 							position: relative;
